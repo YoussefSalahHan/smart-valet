@@ -1,0 +1,146 @@
+p{
+    margin: 0px;
+}
+nz-card{
+    border-radius: 20px;
+    background: #FBFBFE;
+    border:0px !important;
+}
+.cards{
+    margin-bottom: 46px;
+}
+.status-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .numbers{
+        display: flex;
+        align-items: center;
+        img{
+            margin-inline-end: 15px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            span{
+                color: #2B50AA;
+                text-transform: capitalize;
+                font-size: 17px;
+                opacity: .8;
+            }
+            label{
+                color: #2B50AA;
+                text-transform: capitalize;
+                font-size: 42px;
+            }
+        }
+    }
+    .statics{
+        img{
+            margin-bottom: 10px;
+        }
+        h5{
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        &.success{
+            h5{
+                color: #15B62A;
+            }
+        }
+        &.danger{
+            h5{
+                color: #F22525;
+            }
+        }
+    }
+}
+.eranings-statics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .titles{
+        h2{
+            letter-spacing: 2.4px;
+            color: #2B50AA;
+            text-transform: uppercase;
+            opacity: 1;
+            font-size: 24px;
+        }
+        p{
+            letter-spacing: 0px;
+            color: #2B50AA;
+            opacity: 1;
+            font-size: 34px;
+            text-align: start;
+            line-height: 20px;
+
+        }
+    }
+    .buttons{
+        background: #2B50AA;
+        padding: 4px;
+        border-radius: 20px;
+        button{
+            border-radius: 20px;
+            background: #2B50AA;
+            border:0px;
+            width: 113px;
+            &.active{
+                color: #2B50AA;
+                background:#fff ;
+                border-radius: 16px;
+            }
+        }
+    }
+}
+.chart{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.statics-table{
+    ::ng-deep .ant-card-body{
+        padding: 24px !important;
+    }
+    h3{
+        color: #2B50AA;
+        margin-bottom: 10px;
+        font-size: 22px;
+        text-align: start;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            width: 40%;
+            text-align: start;
+        }
+    }
+    .ant-list-bordered{
+        border: 0px;
+        .custom-header{
+            color: #2B50AA;
+        }
+        .ant-list-item{
+            display: flex;
+            span{
+                width: 40%;
+                text-align: start;
+            }
+        }
+    }
+    .ant-list-header{
+        padding-top: 0px !important;
+    }
+    .ant-list-header , .ant-list-item{
+        padding-right: 0px !important;
+        padding-left: 0px  !important;
+    }
+    .ant-list-split .ant-list-header , .ant-list-split .ant-list-item{
+        border-bottom-color: #bdc8e6;
+    }
+}

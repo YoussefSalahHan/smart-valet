@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/// general CSS
+* {
+    font-family: Demi !important;
+}
+.page-container{
+    padding: 40px 70px;
+    background: #eff4fa;
+    width: calc(100vw - 128px);
+    height: 100%;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URW\ DIN\ Arabic\ Demi.ttf);
+}

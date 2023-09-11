@@ -1,1 +1,95 @@
-<p>report-home works!</p>
+<div class="page-container">
+    <div nz-row [nzGutter]="40" class="cards">
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+            <div class="status-card d-flex">
+              <div class="numbers">
+                  <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="">
+                  <div >
+                      <span>Delivered Orders</span>
+                      <label>2250</label>
+                  </div>
+              </div>
+              <div class="statics success">
+                  <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+                  <h5>+20% Inc</h5>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+              <div class="status-card">
+                  <div class="numbers">
+                      <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="">
+                      <div>
+                          <span>Delivered Orders</span>
+                          <label>200</label>
+                      </div>
+                  </div>
+                  <div class="statics danger">
+                      <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="">
+                      <h5>+20% Inc</h5>
+                  </div>
+                </div>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+              <div class="status-card">
+                  <div class="numbers">
+                      <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="">
+                      <div>
+                          <span>Delivered Orders</span>
+                          <label>500</label>
+                      </div>
+                  </div>
+                  <div class="statics success">
+                      <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+                      <h5>+20% Inc</h5>
+                  </div>
+                </div>
+          </nz-card>
+        </div>
+      </div>
+
+      <div nz-row [nzGutter]="40">
+        <div nz-col [nzSpan]="16">
+          <nz-card>
+            <div class="eranings-statics">
+                <div class="titles">
+                    <h2>EARNINGS STATICS</h2>
+                    <p>2,1235 <img src="" alt=""></p>
+                </div>
+                <div class="buttons">
+                    <button nz-button nzType="primary" [nzSize]="'large'" nzShape="round">Anually</button>
+                    <button nz-button nzType="primary" [nzSize]="'large'" nzShape="round">Monthly</button>
+                    <button class="active" nz-button nzType="primary" [nzSize]="'large'" nzShape="round">Weekly</button>
+                </div>
+
+            </div>
+            <div class="chart">
+                chart js
+            </div>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="8" class="statics-table">
+            <nz-card>
+                <ul nz-list [nzDataSource]="data" nzBordered nzSize="large">
+                    
+                    <nz-list-header>
+                        <h3>THE MOST PROFITABLE DAYS</h3>
+                        <div class="custom-header">
+                            <p>Date</p>
+                            <span>Income</span>
+                        </div>
+                    </nz-list-header>
+                    <li nz-list-item *ngFor="let item of data" nzNoFlex>
+                        <p>{{item.date}}</p>
+                        <span>{{item.income}}</span>
+                    </li>
+                  </ul>
+            </nz-card>
+        </div>
+    </div>
+</div>
