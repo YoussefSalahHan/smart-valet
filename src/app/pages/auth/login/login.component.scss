@@ -1,5 +1,9 @@
+.page-height{
+    height: 100vh;
+}
 .right-section {
     position: relative;
+    width: 65vw;
 
     .bg {
         position: relative;
@@ -41,10 +45,13 @@
     }
 }
 
+
 .left-section {
     background: #FFFFFF;
     padding-top: 100px;
-    padding-left: 20px;
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+    width: 35vw;
 
     .title-logo {
         width: 88px;
