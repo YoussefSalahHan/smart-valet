@@ -17,3 +17,119 @@
     font-family: Demi;
     src: url(/assets/fonts/URW\ DIN\ Arabic\ Demi.ttf);
 }
+
+//customize table
+.custom-table{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    .ant-table-content{
+        padding: 0px 30px;
+    }
+    .table-header{
+        background:#2B50AA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 82px;
+        padding: 0px 40px;
+
+        h2{
+            color: #fff;
+            margin-bottom: 0px;
+        }
+        button{
+            background: #fff;
+            color:#2B50AA;
+            height: 48px;
+        }
+    }
+    .ant-table {
+        overflow: hidden;
+        padding-bottom: 10px;
+        // border-bottom-right-radius: 20px;
+        // border-bottom-left-radius: 20px;
+        .ant-table-thead{
+            .ant-table-cell{
+                background: #fff;
+                color:#2B50AA;
+                border-bottom-color: #96a7d4;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        .ant-table-row{
+            padding: 40px 0px;
+            .ant-table-cell{
+                border-bottom-color: #bfcae4;
+            }
+        }
+    }
+    .ant-table-pagination.ant-pagination{
+        padding-inline-start: 30px;
+        margin: 20px 0px;
+        position: relative;
+        margin: 0px;
+        padding: 15px 0px;
+        padding-bottom: 25px;
+        background: #fff;
+        .ant-pagination-item{
+            a{
+                color: #2B50AA;
+                font-size: 14px;
+                line-height: 18px;
+                padding: 0px;
+            }
+        }
+        .ant-pagination-item-active{
+            background:#2B50AA;
+            a{
+                color: #fff;
+            }
+        }
+        ul{
+            li{
+                height: 24px;
+                width: 20px;
+                min-width: 20px;
+                border-width: 2px;
+                border-color: #2B50AA;
+                border-radius: 5px;
+                .ant-pagination-options-size-changer{
+                    position: absolute;
+                    left: 30px;
+                     top: 12px;
+                     .ant-select-selector{
+                        border: 2px solid #2B50AA;
+                        color: #2B50AA;
+                        border-radius: 20px;
+                     }
+                     .ant-select-selection-item{
+                        line-height: 25px;
+                     }
+                     .anticon{
+                        color: #2B50AA;
+                     }
+                }
+                button{
+                    border-width: 2px;
+                    border-color: #2B50AA;
+                    border-radius: 5px;
+                }
+                .anticon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        
+        .ant-pagination-item-link{
+            color: #2B50AA;
+            border-color: #2B50AA;
+        }
+    }
+}
+
+

@@ -1,0 +1,55 @@
+.cards{
+    margin-bottom: 46px;
+}
+nz-card{
+    border-radius: 20px;
+    background: #FBFBFE;
+    border:0px !important;
+}
+.status-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .numbers{
+        display: flex;
+        align-items: center;
+        img{
+            margin-inline-end: 15px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            span{
+                color: #2B50AA;
+                text-transform: capitalize;
+                font-size: 17px;
+                opacity: .8;
+            }
+            label{
+                color: #2B50AA;
+                text-transform: capitalize;
+                font-size: 42px;
+            }
+        }
+    }
+    .statics{
+        img{
+            margin-bottom: 10px;
+        }
+        h5{
+            letter-spacing: 0px;
+            font-size: 14px;
+        }
+        &.success{
+            h5{
+                color: #15B62A;
+            }
+        }
+        &.danger{
+            h5{
+                color: #F22525;
+            }
+        }
+    }
+}

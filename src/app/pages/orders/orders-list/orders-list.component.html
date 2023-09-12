@@ -1,1 +1,85 @@
-<p>orders-list works!</p>
+<div class="page-container">
+    <div nz-row [nzGutter]="40" class="cards">
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+            <div class="status-card d-flex">
+              <div class="numbers">
+                  <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="">
+                  <div >
+                      <span>New Orders</span>
+                      <label>2250</label>
+                  </div>
+              </div>
+              <div class="statics success">
+                  <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+                  <h5>+20% Inc</h5>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+              <div class="status-card">
+                  <div class="numbers">
+                      <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="">
+                      <div>
+                          <span>Delivered Orders</span>
+                          <label>200</label>
+                      </div>
+                  </div>
+                  <div class="statics danger">
+                      <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="">
+                      <h5>+20% Inc</h5>
+                  </div>
+                </div>
+          </nz-card>
+        </div>
+        <div nz-col [nzSpan]="8">
+          <nz-card>
+              <div class="status-card">
+                  <div class="numbers">
+                      <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="">
+                      <div>
+                          <span>In Progress Orders</span>
+                          <label>500</label>
+                      </div>
+                  </div>
+                  <div class="statics success">
+                      <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+                      <h5>+20% Inc</h5>
+                  </div>
+                </div>
+          </nz-card>
+        </div>
+      </div>
+      <div class="custom-table">
+        <div class="table-header">
+            <h2>Orders</h2>
+            <div class="filters">
+                <button nz-button nzType="primary" nzSize="large"  nzShape="round"> <span nz-icon nzType="plus-circle"></span> Add Offer </button>
+            </div>
+        </div>
+        <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of basicTable.data">
+                <td>{{ data.name }}</td>
+                <td>{{ data.age }}</td>
+                <td>{{ data.address }}</td>
+                <td>
+                  <a>Action 一 {{ data.name }}</a>
+                  <nz-divider nzType="vertical"></nz-divider>
+                  <a>Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </nz-table>
+      </div>
+</div>
