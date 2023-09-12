@@ -1,0 +1,68 @@
+.header {
+    height: 100%;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+}
+
+.title-logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #2B50AA 0% 0% no-repeat padding-box;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 11px;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+h2 {
+    color: #2B50AA;
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.search {
+    border-radius: 10px;
+    height: 45px;
+    background: #F6F8FC;
+
+    input {
+        background: inherit;
+    }
+
+    ::ng-deep .ant-input-prefix {
+        color: #A0A2A8;
+        font-size: 22px;
+    }
+}
+
+.anticon-filter {
+    font-size: 28px;
+    color: #2B50AA;
+    padding: 9px 10px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+    .notification{
+        padding-right: 30px;
+    }
+    .profile {
+        img {
+            border-radius: 50%;
+        }
+        span {
+            padding: 0 5px;
+        };
+    }
+}

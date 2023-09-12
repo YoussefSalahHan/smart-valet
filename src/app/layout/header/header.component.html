@@ -1,0 +1,28 @@
+<div class="header" nz-row nzJustify="space-between" nzAlign="middle">
+    <div nz-col class="flex-start">
+        <div class="title-logo">
+            <img width="29px" height="29px" src="/assets/svg/login/vuesax-bold-car-white.svg" />
+        </div>
+        <h2>Smart Valet</h2>
+    </div>
+    <div nz-col nzXl="12" class="flex-start">
+        <nz-input-group class="search" [nzPrefix]="prefixTemplateSearch">
+            <input type="text" nz-input />
+        </nz-input-group>
+        <ng-template #prefixTemplateSearch>
+            <span nz-icon nzType="search"></span>
+        </ng-template>
+        <span nz-icon nzType="filter"></span>
+    </div>
+    <div nz-col class="flex-end">
+        <div class="notification">
+            <img width="28px" height="28px" src="/assets/svg/header/vuesax-bold-notification.svg" />
+        </div>
+        <div class="profile">
+            <img width="35px" height="35px"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png">
+            <span>Heba Hasan</span>
+            <span nz-icon nzType="caret-down" nzTheme="outline"></span>
+        </div>
+    </div>
+</div>
