@@ -14,7 +14,37 @@
 
 @font-face {
     font-family: Demi;
-    src: url(/assets/fonts/URW\ DIN\ Arabic\ Demi.ttf);
+    src: url(/assets/fonts/URWDIN-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URWDIN-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URWDIN-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URWDIN-Demi.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URWDIN-Regular.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: Demi;
+    src: url(/assets/fonts/URWDIN-Thin.ttf);
+    font-weight: 100;
 }
 
 //customize table
@@ -56,6 +86,7 @@
         .ant-table-row{
             padding: 40px 0px;
             .ant-table-cell{
+                font-weight: 400;
                 font-size: 14px;
                 border-bottom-color: #bfcae4;
             }
