@@ -1,0 +1,110 @@
+.right-section {
+    position: relative;
+
+    .bg {
+        position: relative;
+        background-image: url('/assets/svg/login/smart-valet-background.svg');
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-inner {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: auto;
+        border-radius: 139px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+
+        .inner {
+            position: relative;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 60px;
+        }
+    }
+
+    h1 {
+        color: #FFFFFF;
+        font: normal normal bold 60px/77px URW DIN Arabic;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        position: absolute;
+        top: 60%;
+    }
+}
+
+.left-section {
+    background: #FFFFFF;
+    padding-top: 100px;
+    padding-left: 20px;
+
+    .title-logo {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        background: #2B50AA 0% 0% no-repeat padding-box;
+
+        img {
+            position: relative;
+            top: 27px;
+        }
+    }
+
+    h2 {
+        color: #2B50AA;
+        font-size: 38px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    h1 {
+        color: #2B50AA;
+        font-size: 38px;
+        padding-top: 20px;
+    }
+
+    .hint {
+        color: #A0A2A8;
+        font-size: 15px;
+        // padding-top: 20px;   
+    }
+}
+
+.login-form {
+    text-align: start;
+
+    nz-form-label {
+        text-align: start;
+    }
+
+    input {
+        height: 67px;
+        border: 1px solid #E9E9F0;
+        border-radius: 20px;
+    }
+
+    .login-form-button {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        button {
+            width: 175px;
+            height: 50px;
+            border-radius: 12px;
+        }
+    }
+}
+
+::ng-deep .ant-form-item-label>label::after {
+    display: none;
+}
+.no-account {
+    padding-bottom: 40px;
+}
