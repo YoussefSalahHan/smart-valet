@@ -22,6 +22,13 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
+    .filters{
+        .ant-dropdown-link{
+            color: #fff;
+            font-size: 18px;
+            padding-inline-end: 30px;
+        }
+    }
     .ant-table-content{
         padding: 0px 30px;
     }
@@ -46,10 +53,16 @@
     .ant-table {
         overflow: hidden;
         padding-bottom: 10px;
-        // border-bottom-right-radius: 20px;
-        // border-bottom-left-radius: 20px;
+        .ant-table-row{
+            padding: 40px 0px;
+            .ant-table-cell{
+                font-size: 14px;
+                border-bottom-color: #bfcae4;
+            }
+        }
         .ant-table-thead{
             .ant-table-cell{
+                font-size: 16px;
                 background: #fff;
                 color:#2B50AA;
                 border-bottom-color: #96a7d4;
@@ -58,12 +71,7 @@
                 }
             }
         }
-        .ant-table-row{
-            padding: 40px 0px;
-            .ant-table-cell{
-                border-bottom-color: #bfcae4;
-            }
-        }
+        
     }
     .ant-table-pagination.ant-pagination{
         padding-inline-start: 30px;

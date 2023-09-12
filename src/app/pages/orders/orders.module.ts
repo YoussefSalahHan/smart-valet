@@ -13,6 +13,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 
 
 
@@ -36,7 +38,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     NzListModule,
     NzTableModule,
     NzDividerModule,
-    NzIconModule
+    NzIconModule,
+    NzDropDownModule,
+    NzTagModule
   ]
 })
 export class OrdersModule { }

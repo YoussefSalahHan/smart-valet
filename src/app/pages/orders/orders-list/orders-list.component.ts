@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Person  {
-  key: string;
-  name: string;
-  age: number;
-  address: string;
-}
 
 @Component({
   selector: 'app-orders-list',
@@ -16,510 +10,266 @@ interface Person  {
 export class OrdersListComponent implements OnInit {
   
 
-  listOfData: Person[] = [
+  listOfData = [
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
     {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park'
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park'
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
+    },
+    {
+      order_id: '#1000',
+      date: '10 Dec 2023',
+      customer: 'Mai Ahmed',
+      checkin: '07:00 Am',
+      checkout: '03:00 Pm',
+      price: '40 SAR',
+      payment: 'Paid',
+      status: 'Car Parked',
     }
   ];
 
