@@ -1,0 +1,66 @@
+<div class="page-container">
+    <div class="widget">
+        <div class="widget-header">
+            <p class="widget-title">
+                <span class="widget-icon" nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Add Order
+            </p>
+        </div>
+        <div class="widget-body">
+            <div nz-row [nzGutter]="40" class="cards">
+                <div nz-col [nzSpan]="16">
+                  <nz-card class="gray">
+                    <h3 class="custom-title">Car Info .</h3>
+                    <div nz-row [nzGutter]="40">
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Customer Name</label>
+                            <input nz-input placeholder="Customer Name" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Customer Phone Number</label>
+                            <input nz-input placeholder="Customer Phone Number" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Car Brand</label>
+                            <input nz-input placeholder="Car Brand" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Car Model</label>
+                            <input nz-input placeholder="Car Model" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>Car Plate</label>
+                            <input nz-input placeholder="Car Plate" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>Notes (Optional)</label>
+                            <textarea rows="5" nz-input  placeholder="Write your notes here"></textarea>
+                        </div>
+                    </div>
+                  </nz-card>
+                </div>
+                <div nz-col [nzSpan]="8">
+                    <nz-card class="gray add-order-summary">
+                        <h3 class="custom-title">Payments Info .</h3>
+                        <ul>
+                            <li>
+                                <p>Price</p>
+                                <span>30 SAR</span>
+                            </li>
+                            <li>
+                                <p>Service Tax</p>
+                                <span>10 SAR</span>
+                            </li>
+                            <hr class="divider">
+                            <li>
+                                <p>Total Price</p>
+                                <span>40 SAR</span>
+                            </li>
+                        </ul>
+                    </nz-card>
+                  </div>
+            </div>
+            <button nz-button nzType="primary" nzSize="large" nzShape="round" class="submit-button">Submit</button>
+        </div>
+    </div>
+</div>

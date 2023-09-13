@@ -7,7 +7,6 @@
 }
 .page-container{
     padding: 40px 70px;
-    width: calc(100vw - 128px);
     height: 100%;
 }
 
@@ -67,7 +66,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 82px;
+        height: 62px;
         padding: 0px 40px;
 
         h2{
@@ -168,6 +167,96 @@
             border-color: #2B50AA;
         }
     }
+}
+
+
+/// Design for widget
+.widget{
+    overflow: hidden;
+    border-radius: 20px;
+    .widget-header{
+        background:#2B50AA;
+        color: #fff;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        .widget-title{
+            padding-top: 5px;
+            margin: 0px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .widget-icon{
+            margin-inline-end: 7px;
+        }
+    }
+    .widget-body{
+        background: #fff;
+        padding: 40px;
+    }
+}
+
+// customize card to be rounded and without border
+.ant-card {
+    border-radius: 20px;
+    border:0px;
+    &.gray{
+        background: #fafafa;
+    }
+    &.white{
+        background: #fff;
+    }
+}
+
+/// custom title
+.custom-title{
+    color: #2B50AA;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    padding-inline-start: 59px;
+    font-weight: 600;
+    &:before{
+        content: "";
+        width: 39px;
+        height: 4px;
+        border-radius: 10px;
+        background: #2B50AA;
+        display: flex;
+        position: absolute;
+        inset-inline-start: 0px;
+        top: 10px;
+    }
+}
+
+// customize input to be rounded 
+.input-widget{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    label{
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.ant-input{
+    height: 67px;
+    border: 1px solid #E9E9F0;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 23px 30px;
+    margin-bottom: 24px;
+}
+
+/// customize button to be rounded 
+.ant-btn-round{
+    height: 65px !important;
+    border-radius: 20px !important;
+    padding: 0px 70px !important;
 }
 
 
