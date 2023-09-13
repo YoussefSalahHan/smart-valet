@@ -5,24 +5,27 @@
 nz-header {
   background: #fff;
   height: 120px;
-}
-
-nz-footer {
-  line-height: 1.5;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 nz-sider {
   background: #fff;
+  position: fixed;
+  top: 120px;
+  overflow: auto;
+  height: 100%;
 }
 
 nz-content {
-  height: 100vh;
   background: #eff4fa;
   border-radius: 20px;
-  margin: 0 20px 20px 0
+  margin: 120px 20px 20px 140px;
 }
 
 nz-layout {
+  min-height: 100vh;
   margin-bottom: 48px;
   background: none !important;
 }
