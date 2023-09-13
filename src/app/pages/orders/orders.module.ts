@@ -7,7 +7,6 @@ import { OrdersViewComponent } from './orders-view/orders-view.component';
 import { OrdersRoutingModule } from './orders-routing.module';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzGridModule } from 'ng-zorro-antd/grid';
-import { ReportsRoutingModule } from '../reports/reports-routing.module';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzTableModule } from 'ng-zorro-antd/table';
@@ -36,7 +35,6 @@ import { NzInputModule } from 'ng-zorro-antd/input';
     CommonModule,
     NzCardModule,
     NzGridModule,
-    ReportsRoutingModule,
     NzButtonModule,
     OrdersRoutingModule,
     NzListModule,

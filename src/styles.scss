@@ -72,11 +72,12 @@
         h2{
             color: #fff;
             margin-bottom: 0px;
+            padding-top: 4px;
         }
-        button{
+        .ant-btn.ant-btn-round.ant-btn-lg{
             background: #fff;
             color:#2B50AA;
-            height: 48px;
+            padding-top: 8px;
         }
     }
     .ant-table {
@@ -115,7 +116,7 @@
             a{
                 color: #2B50AA;
                 font-size: 14px;
-                line-height: 18px;
+                line-height: 24px;
                 padding: 0px;
             }
         }
@@ -143,7 +144,7 @@
                         border-radius: 20px;
                      }
                      .ant-select-selection-item{
-                        line-height: 25px;
+                        line-height:30px;
                      }
                      .anticon{
                         color: #2B50AA;
@@ -167,6 +168,9 @@
             border-color: #2B50AA;
         }
     }
+}
+.anticon.anticon-down{
+    margin-inline-start: 5px;
 }
 
 
@@ -253,7 +257,7 @@
 }
 
 /// customize button to be rounded 
-.ant-btn-round{
+.ant-btn-round.ant-btn-primary{
     height: 65px !important;
     border-radius: 20px !important;
     padding: 0px 70px !important;
