@@ -5,7 +5,8 @@ import { CompaniesListComponent } from './companies-list/companies-list.componen
 import { CompaniesAddComponent } from './companies-add/companies-add.component';
 import { CompaniesEditComponent } from './companies-edit/companies-edit.component';
 import { CompaniesViewComponent } from './companies-view/companies-view.component';
-
+import { CompaniesRoutingModule } from './companies-routing.module';
+import { DemoNgZorroAntdModule } from "src/app/ng-zorro-antd.module";
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { CompaniesViewComponent } from './companies-view/companies-view.componen
     CompaniesViewComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DemoNgZorroAntdModule,
+    CompaniesRoutingModule
   ]
 })
 export class CompaniesModule { }
