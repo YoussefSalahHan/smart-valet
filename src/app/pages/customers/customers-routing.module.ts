@@ -5,6 +5,11 @@ import { CustomersListComponent } from "./customers-list/customers-list.componen
 
 const routes: Routes = [
   {
+    path: "",
+    redirectTo: "list",
+    pathMatch: "full",
+  },
+  {
     path: "list",
     component: CustomersListComponent,
   },
@@ -14,4 +19,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class CustomersRoutingModule {}
+export class CustomersRoutingModule { }
