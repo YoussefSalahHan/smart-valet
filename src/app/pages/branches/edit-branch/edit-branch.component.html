@@ -1,0 +1,79 @@
+<div class="page-container">
+    
+    <div class="widget">
+        <div class="widget-header">
+            <p class="widget-title">
+                <span class="widget-icon" nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Edit Branch
+            </p>
+        </div>
+        <div class="widget-body">
+            <div nz-row [nzGutter]="40" class="cards">
+                <div nz-col [nzSpan]="15">
+                  <nz-card class="gray">
+                    <h3 class="custom-title">Company Info .</h3>
+                    <div nz-row [nzGutter]="40">
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>Branch Name</label>
+                            <input nz-input placeholder="Branch Name" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Branch Email</label>
+                            <input nz-input placeholder="Branch Email" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Phone Number</label>
+                            <input nz-input placeholder="Phone Number" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>Branch Address</label>
+                            <input nz-input placeholder="Branch Address" />
+                        </div>
+                        <div class="switcher-widget" nz-col [nzSpan]="24">
+                            <label>Status :</label> 
+                            <nz-switch></nz-switch>
+                            <span>Active</span>
+ 
+                        </div>
+                    </div>
+                  </nz-card>
+                </div>
+                <div nz-col [nzSpan]="9">
+                    <nz-card class="gray add-order-summary">
+                        <h3 class="custom-title">User Branch Info .</h3>
+                        <div nz-row [nzGutter]="40">
+                            <div class="input-widget" nz-col [nzSpan]="24">
+                                <label>Manager Name</label>
+                                <input nz-input placeholder="Manager Name" />
+                            </div>
+                            <div class="input-widget" nz-col [nzSpan]="24">
+                                <label>Company Manager Phone</label>
+                                <input nz-input placeholder="Company Manager Phone" class="margin-0" />
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="times-of-work">
+                            <h3 class="custom-title">Times Of Work .</h3>
+                            <a nz-button nzType="text"><span nz-icon nzType="plus-circle" nzTheme="outline"></span> Add Times Of Work</a>
+                        </div>
+
+                        <hr>
+                        <h3 class="custom-title">Additional Info .</h3>
+                        <div nz-row [nzGutter]="40">
+                            <div class="input-widget" nz-col [nzSpan]="12">
+                                <label>Service Charge</label>
+                                <input nz-input placeholder="Service Charge" />
+                            </div>
+                            <div class="input-widget" nz-col [nzSpan]="12">
+                                <label>Type</label>
+                                <input nz-input placeholder="Type" />
+                            </div>
+                        </div>
+
+                    </nz-card>
+                  </div>
+            </div>
+            <button nz-button nzType="primary" nzSize="large" nzShape="round" class="submit-button">Submit</button>
+        </div>
+    </div>
+</div>
