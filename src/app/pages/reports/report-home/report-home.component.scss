@@ -82,11 +82,16 @@ nz-card{
         background: #2B50AA;
         padding: 4px;
         border-radius: 20px;
+        display: flex;
         button{
             border-radius: 20px;
             background: #2B50AA;
             border:0px;
             width: 113px;
+            height: 48px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &.active{
                 color: #2B50AA;
                 background:#fff ;
