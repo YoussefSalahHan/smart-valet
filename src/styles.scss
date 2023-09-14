@@ -186,6 +186,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 40px;
+        .ant-btn.ant-btn-round.ant-btn-lg{
+            background: #fff;
+            color: #2B50AA;
+            padding-top: 8px;
+        }
         .widget-title{
             padding-top: 5px;
             margin: 0px;

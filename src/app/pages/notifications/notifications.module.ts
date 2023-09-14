@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 import { NotificationsHomeComponent } from './notifications-home/notifications-home.component';
 import { NotificationsListComponent } from './notifications-list/notifications-list.component';
 import { NotificationsAddComponent } from './notifications-add/notifications-add.component';
+import { NotificationsRoutingModule } from './notifications-routing.module';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 
 
 
@@ -13,7 +19,13 @@ import { NotificationsAddComponent } from './notifications-add/notifications-add
     NotificationsAddComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NotificationsRoutingModule,
+    NzCardModule,
+    NzGridModule,
+    NzButtonModule,
+    NzIconModule,
+    NzPaginationModule
   ]
 })
 export class NotificationsModule { }
