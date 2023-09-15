@@ -1,6 +1,7 @@
-.page-height{
+.page-height {
     height: 100vh;
 }
+
 .right-section {
     position: relative;
     width: 65vw;
@@ -93,7 +94,7 @@
     }
 
     input {
-        height: 67px;
+        height: 55px;
         border: 1px solid #E9E9F0;
         border-radius: 20px;
     }
@@ -101,6 +102,7 @@
     .login-form-button {
         padding-top: 30px;
         padding-bottom: 15px;
+
         button {
             width: 175px;
             height: 50px;
@@ -112,13 +114,15 @@
 ::ng-deep .ant-form-item-label>label::after {
     display: none;
 }
+
 .no-account {
     padding-bottom: 40px;
 }
+
 ::ng-deep .ant-input-suffix {
     position: absolute;
     right: 20px;
-    top: 30px
+    top: 23px
 }
 
 .ant-input-affix-wrapper {
