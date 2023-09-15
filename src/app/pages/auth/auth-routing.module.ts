@@ -20,12 +20,12 @@ const routes: Routes = [
     component: RegisterComponent,
   },
   {
-    path: 'reset-password',
-    component: ResetPassComponent,
-  },
-  {
     path: 'forget-password',
     component: ForgetPassComponent,
+  },
+  {
+    path: 'reset-password',
+    component: ResetPassComponent,
   }
 ];
 
