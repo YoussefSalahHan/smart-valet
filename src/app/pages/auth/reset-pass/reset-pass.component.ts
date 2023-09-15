@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./reset-pass.component.scss']
 })
 export class ResetPassComponent {
-
-}
+  passwordVisible: boolean = false;
+  confirmPasswordVisible: boolean = false;
+} 
