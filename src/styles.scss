@@ -300,49 +300,59 @@
     border-radius: 20px !important;
     padding: 0px 70px !important;
 }
+
 nz-space {
     width: 100%;
 }
 
 
 /// customize modal 
-.ant-modal-wrap{
+.ant-modal-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .ant-modal {
         top: auto;
         background: #F0F4F9;
         padding-bottom: 0px;
         padding: 30px;
         border-radius: 20px;
-        .ant-modal-content{
+
+        .ant-modal-content {
             border-radius: 20px;
             overflow: hidden;
             padding: 30px;
         }
-        .ant-modal-title{
+
+        .ant-modal-title {
             color: #2B50AA;
             font-size: 18px;
             position: relative;
             top: 3px;
         }
-        .ant-modal-footer  , .ant-modal-header{
+
+        .ant-modal-footer,
+        .ant-modal-header {
             padding: 0px;
         }
-        .ant-modal-header{
+
+        .ant-modal-header {
             padding-bottom: 20px;
             border-bottom-color: #E9E9F0;
         }
-        .ant-modal-footer{
+
+        .ant-modal-footer {
             border: 0px;
         }
-        .ant-btn{
+
+        .ant-btn {
             height: 65px !important;
             border-radius: 20px !important;
             padding: 0px 70px !important;
         }
-        button.ant-modal-close{
+
+        button.ant-modal-close {
             background: #B53030;
             color: #fff;
             width: 25px;
@@ -353,13 +363,13 @@ nz-space {
             justify-content: center;
             top: 27px;
             right: 30px;
-            svg{
+
+            svg {
                 width: 11px;
                 height: 22px;
                 position: relative;
                 top: 6px;
             }
         }
-    }    
+    }
 }
-
