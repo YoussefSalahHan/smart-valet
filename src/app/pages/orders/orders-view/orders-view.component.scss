@@ -1,0 +1,121 @@
+.filters {
+    .status {
+        background: rgb(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 5px 12px;
+        color: #fff;
+
+        label {
+            font-weight: 100;
+        }
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    .time {
+        font-weight: 100;
+        color: #E9E9F0;
+
+        .anticon-clock-circle {
+            padding: 0 3px 0 15px;
+        }
+    }
+}
+
+.ant-card {
+    border-radius: 0;
+    text-align: start;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ant-steps-item-description {
+    color: #A0A2A8;
+    font-size: 10px;
+}
+
+.content {
+    .step1 {
+
+        .dot {
+            background-color: #EFB702;
+        }
+
+        ::ng-deep .ant-steps-item-title {
+            color: #EFB702 !important;
+        }
+    }
+
+    .step2 {
+
+        .dot {
+            background-color: #00B2D5;
+        }
+
+        ::ng-deep .ant-steps-item-title {
+            color: #00B2D5 !important;
+        }
+    }
+
+    .step3 {
+
+        .dot {
+            background-color: #E67B02;
+        }
+
+        ::ng-deep .ant-steps-item-title {
+            color: #E67B02 !important;
+        }
+    }
+
+    .step4 {
+
+        .dot {
+            background-color: #A0A2A8;
+        }
+
+        ::ng-deep .ant-steps-item-title {
+            color: #A0A2A8 !important;
+        }
+    }
+
+    .step5 {
+
+        .dot {
+            background-color: #A0A2A8;
+        }
+
+        ::ng-deep .ant-steps-item-title {
+            color: #A0A2A8 !important;
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 3px solid #2B50AA;
+        width: 25px;
+        position: absolute;
+        top: 43px;
+        left: 38px;
+    }
+
+    h2 {
+        padding-left: 45px;
+        color: #2B50AA;
+    }
+    .details{
+        padding-top: 20px;
+    }
+    .custom-card {
+        background: #FBFBFE;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}

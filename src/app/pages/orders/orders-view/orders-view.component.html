@@ -1,1 +1,85 @@
-<p>orders-view works!</p>
+<div class="page-container">
+    <div class="custom-table">
+        <div class="table-header">
+            <a [routerLink]="['/orders']">
+                <h2>
+                    <span nz-icon nzType="left-circle" nzTheme="outline"></span>
+                    Order No.#1000 Details
+                </h2>
+            </a>
+            <div class="filters">
+                <span class="status">
+                    <label>Status: </label>
+                    <span>Car Parked By Employee</span>
+                </span>
+                <span class="time">
+                    <span nz-icon nzType="clock-circle" nzTheme="outline"></span>
+                    <span> 2 Dec 2023</span>
+                </span>
+            </div>
+        </div>
+        <div class="content">
+            <nz-card>
+                <div class="custom-card">
+                    <hr />
+                    <h2>Status.</h2>
+                    <nz-steps>
+                        <nz-step class="step1" nzTitle="Pending" nzDescription="At 03:05 Pm"
+                            [nzIcon]="iconTemplate"></nz-step>
+                        <nz-step class="step2" nzTitle="Car Parked By Employee" nzDescription="At 03:15 Pm"
+                            [nzIcon]="iconTemplate"></nz-step>
+                        <nz-step class="step3" nzTitle="Car Requested By Customer" nzDescription="At 06:45 Pm"
+                            [nzIcon]="iconTemplate"></nz-step>
+                        <nz-step class="step4" nzTitle="Car Ready By Employee" [nzIcon]="iconTemplate"></nz-step>
+                        <nz-step class="step5" nzTitle="Car Delivered By Employee" [nzIcon]="iconTemplate"></nz-step>
+                        <ng-template #iconTemplate><span class="dot"></span></ng-template>
+                    </nz-steps>
+                </div>
+                <div nz-row class="details">
+                    <div nz-col nzSpan="16" class="custom-card">col-16</div>
+                    <div nz-col nzSpan="7" nzOffset="1">
+                        <nz-space nzDirection="vertical">
+                            <div *nzSpaceItem class="custom-card">
+                                <hr />
+                                <h2>Payments Info .</h2>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Price</div>
+                                    <div nz-col>30 SAR</div>
+                                </div>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Service Tax</div>
+                                    <div nz-col>10 SAR</div>
+                                </div>
+                                <hr>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Total Price</div>
+                                    <div nz-col>40 SAR</div>
+                                </div>
+                            </div>
+
+                            <div *nzSpaceItem class="custom-card">
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Payment Method</div>
+                                    <div nz-col>My Wallet</div>
+                                </div>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Date</div>
+                                    <div nz-col>2 Dec 2023 | 10 : 00 Am</div>
+                                </div>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Transaction ID</div>
+                                    <div nz-col>623621123</div>
+                                </div>
+                                <div nz-row nzJustify="space-between">
+                                    <div nz-col>Status</div>
+                                    <div nz-col>
+                                        <nz-tag nzColor="success">Paid</nz-tag>
+                                    </div>
+                                </div>
+                            </div>
+                        </nz-space>
+                    </div>
+                </div>
+            </nz-card>
+        </div>
+    </div>

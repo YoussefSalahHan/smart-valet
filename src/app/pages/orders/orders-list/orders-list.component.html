@@ -1,115 +1,122 @@
 <div class="page-container">
-    <div nz-row [nzGutter]="40" class="cards">
-        <div nz-col [nzSpan]="8">
-          <nz-card>
-            <div class="status-card d-flex">
-              <div class="numbers">
-                  <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="">
-                  <div >
-                      <span>New Orders</span>
-                      <label>2250</label>
-                  </div>
-              </div>
-              <div class="statics success">
-                  <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
-                  <h5>+20% Inc</h5>
-              </div>
+  <div nz-row [nzGutter]="40" class="cards">
+    <div nz-col [nzSpan]="8">
+      <nz-card>
+        <div class="status-card d-flex">
+          <div class="numbers">
+            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="">
+            <div>
+              <span>New Orders</span>
+              <label>2250</label>
             </div>
-          </nz-card>
+          </div>
+          <div class="statics success">
+            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+            <h5>+20% Inc</h5>
+          </div>
         </div>
-        <div nz-col [nzSpan]="8">
-          <nz-card>
-              <div class="status-card">
-                  <div class="numbers">
-                      <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="">
-                      <div>
-                          <span>Delivered Orders</span>
-                          <label>200</label>
-                      </div>
-                  </div>
-                  <div class="statics danger">
-                      <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="">
-                      <h5>+20% Inc</h5>
-                  </div>
-                </div>
-          </nz-card>
-        </div>
-        <div nz-col [nzSpan]="8">
-          <nz-card>
-              <div class="status-card">
-                  <div class="numbers">
-                      <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="">
-                      <div>
-                          <span>In Progress Orders</span>
-                          <label>500</label>
-                      </div>
-                  </div>
-                  <div class="statics success">
-                      <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
-                      <h5>+20% Inc</h5>
-                  </div>
-                </div>
-          </nz-card>
-        </div>
-      </div>
-      <div class="custom-table">
-        <div class="table-header">
-            <h2>Orders</h2>
-            <div class="filters">
-
-                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
-                    Date
-                    <span nz-icon nzType="down"></span>
-                  </a>
-                  <nz-dropdown-menu #menu="nzDropdownMenu">
-                    <ul nz-menu>
-                      <li nz-menu-item>Approved</li>
-                      <li nz-menu-item>Pending</li>
-                      <li nz-menu-item>New</li>
-                    </ul>
-                  </nz-dropdown-menu>
-
-
-                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
-                    Status
-                    <span nz-icon nzType="down"></span>
-                  </a>
-                  <nz-dropdown-menu #menu="nzDropdownMenu">
-                    <ul nz-menu>
-                      <li nz-menu-item>Approved</li>
-                      <li nz-menu-item>Pending</li>
-                      <li nz-menu-item>New</li>
-                    </ul>
-                  </nz-dropdown-menu>
-                
-                <button nz-button nzType="default" nzSize="large"  nzShape="round"> <span nz-icon nzType="plus-circle"></span> Add Offer </button>
+      </nz-card>
+    </div>
+    <div nz-col [nzSpan]="8">
+      <nz-card>
+        <div class="status-card">
+          <div class="numbers">
+            <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="">
+            <div>
+              <span>Delivered Orders</span>
+              <label>200</label>
             </div>
+          </div>
+          <div class="statics danger">
+            <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="">
+            <h5>+20% Inc</h5>
+          </div>
         </div>
-        <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
-            <thead>
-              <tr>
-                <th>Order No.</th>
-                <th>Date</th>
-                <th>Customer</th>
-                <th>Check In</th>
-                <th>Check Out</th>
-                <th>Total Price</th>
-                <th>Payment Status</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let data of basicTable.data">
-                <td>{{ data.order_id }}</td>
-                <td>{{ data.date }}</td>
-                <td>{{ data.customer }}</td>
-                <td>{{ data.checkin }}</td>
-                <td>{{ data.checkout }}</td>
-                <td>{{ data.price }}</td>
-                <td>{{ data.payment }}</td>
-                <td><nz-tag nzColor="success">{{ data.status }}</nz-tag></td>
-              </tr>
-            </tbody>
-          </nz-table>
+      </nz-card>
+    </div>
+    <div nz-col [nzSpan]="8">
+      <nz-card>
+        <div class="status-card">
+          <div class="numbers">
+            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="">
+            <div>
+              <span>In Progress Orders</span>
+              <label>500</label>
+            </div>
+          </div>
+          <div class="statics success">
+            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+            <h5>+20% Inc</h5>
+          </div>
+        </div>
+      </nz-card>
+    </div>
+  </div>
+  <div class="custom-table">
+    <div class="table-header">
+      <h2>Orders</h2>
+      <div class="filters">
+
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          Date
+          <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>Approved</li>
+            <li nz-menu-item>Pending</li>
+            <li nz-menu-item>New</li>
+          </ul>
+        </nz-dropdown-menu>
+
+
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          Status
+          <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>Approved</li>
+            <li nz-menu-item>Pending</li>
+            <li nz-menu-item>New</li>
+          </ul>
+        </nz-dropdown-menu>
+
+        <button nz-button nzType="default" nzSize="large" nzShape="round"> <span nz-icon nzType="plus-circle"></span>
+          Add Offer </button>
       </div>
+    </div>
+    <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
+      <thead>
+        <tr>
+          <th>Order No.</th>
+          <th>Date</th>
+          <th>Customer</th>
+          <th>Check In</th>
+          <th>Check Out</th>
+          <th>Total Price</th>
+          <th>Payment Status</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data.order_id }}</td>
+          <td>{{ data.date }}</td>
+          <td>{{ data.customer }}</td>
+          <td>{{ data.checkin }}</td>
+          <td>{{ data.checkout }}</td>
+          <td>{{ data.price }}</td>
+          <td>{{ data.payment }}</td>
+          <td><nz-tag nzColor="success">{{ data.status }}</nz-tag></td>
+          <td>
+            <a [routerLink]="['/orders/view/'+data.order_id]">
+              <img src="/assets/svg/orders/vuesax-bold-eye.svg" alt="">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
 </div>
