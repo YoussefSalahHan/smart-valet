@@ -9,6 +9,9 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzInputModule } from 'ng-zorro-antd/input';
 
 
 
@@ -25,7 +28,10 @@ import { NzPaginationModule } from 'ng-zorro-antd/pagination';
     NzGridModule,
     NzButtonModule,
     NzIconModule,
-    NzPaginationModule
+    NzPaginationModule,
+    NzModalModule,
+    NzSelectModule,
+    NzInputModule
   ]
 })
 export class NotificationsModule { }
