@@ -6,6 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./companies-view.component.scss']
 })
 export class CompaniesViewComponent {
+  isVisible = false;
+  radioValue = 'A'; 
+
+
+  changeStatus(){
+    this.isVisible = true;
+  }
+
+  handleCancel(){
+    this.isVisible = false;
+  }
+  
+  handleOk(){
+    this.isVisible = false;
+  }
 
   panels = [
     {

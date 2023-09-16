@@ -20,7 +20,7 @@
                     </li>
                     <li style="width: 13%;">
                         <p>Status</p>
-                        <span class="active">Active <span nz-icon nzType="down" nzTheme="outline"></span></span> 
+                        <span class="active" (click)="changeStatus()">Active <span nz-icon nzType="down" nzTheme="outline"></span></span> 
                     </li>
                     <li style="width: 27%;" class="row">
                         <label><span nz-icon nzType="environment" nzTheme="outline"></span></label>
@@ -98,3 +98,20 @@
         </div>
     </div>
 </div>
+
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="SELECT STATUS" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="change-status-modal">
+    <ng-container *nzModalContent>
+        <nz-radio-group>
+            <label nz-radio nzValue="A" class="pending">Pending</label>
+            <label nz-radio nzValue="B" class="parked">Car Parked By Employee</label>
+            <label nz-radio nzValue="C" class="requested">Car Requested By Customer</label>
+            <label nz-radio nzValue="D" class="ready">Car Ready By Employee</label>
+            <label nz-radio nzValue="E" class="deliverd">Car Delivered By Employee</label>
+
+        </nz-radio-group>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer">
+        <button nz-button nzType="primary">Submit</button>
+    </div>
+</nz-modal>
