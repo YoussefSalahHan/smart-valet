@@ -11,6 +11,10 @@ export class CompaniesListComponent {
 
   }
 
+  addCompany(){
+    this.router.navigate(['branches/edit']);
+  }
+
   onRowClick(){
     this.router.navigate(['companies/view/1']);
   }

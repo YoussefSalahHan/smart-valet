@@ -53,30 +53,35 @@
     padding-inline-start: 60px;
     padding-inline-end: 60px;
     width: 35vw;
+    text-align: left;
 
     .title-logo {
         width: 88px;
         height: 88px;
         border-radius: 50%;
         background: #2B50AA 0% 0% no-repeat padding-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
             position: relative;
-            top: 27px;
         }
     }
 
     h2 {
         color: #2B50AA;
-        font-size: 38px;
+        font-size: 36px;
         padding-top: 10px;
         padding-left: 10px;
     }
 
     h1 {
         color: #2B50AA;
-        font-size: 38px;
+        font-size: 36px;
         padding-top: 20px;
+        text-align: left;
+        font-weight: bold;
     }
 
     .hint {
