@@ -58,13 +58,51 @@ h2 {
     justify-content: end;
     .notification{
         padding-right: 30px;
+        cursor: pointer;
     }
     .profile {
+        cursor: pointer;
         img {
             border-radius: 50%;
         }
         span {
             padding: 0 5px;
         };
+    }
+}
+::ng-deep .profile-modal{
+    display: flex;
+    img{
+        width: 124px;
+        height: 124px;
+        overflow: hidden;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .ant-modal-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 , p{
+        margin-bottom: 0px;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .custom-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        button.ant-btn.ant-btn-text{
+            color: #2B50AA; 
+        }
     }
 }

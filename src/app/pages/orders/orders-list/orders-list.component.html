@@ -82,8 +82,8 @@
           </ul>
         </nz-dropdown-menu>
 
-        <button nz-button nzType="default" nzSize="large" nzShape="round"> <span nz-icon nzType="plus-circle"></span>
-          Add Offer </button>
+        <button nz-button nzType="default" nzSize="large" nzShape="round" (click)="addOrder()"> <span nz-icon nzType="plus-circle"></span>
+          Add Order </button>
       </div>
     </div>
     <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>

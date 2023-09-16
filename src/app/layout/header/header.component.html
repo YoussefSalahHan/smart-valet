@@ -16,9 +16,9 @@
     </div>
     <div nz-col class="flex-end">
         <div class="notification">
-            <img width="28px" height="28px" src="/assets/svg/header/vuesax-bold-notification.svg" />
+            <img width="28px" height="28px" (click)="openNotifications()" src="/assets/svg/header/vuesax-bold-notification.svg" />
         </div>
-        <div class="profile">
+        <div class="profile" (click)="openProfile()">
             <img width="35px" height="35px"
                 src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png">
             <span>Heba Hasan</span>
@@ -26,3 +26,17 @@
         </div>
     </div>
 </div>
+
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="MY PROFILE" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="profile-modal">
+    <ng-container *nzModalContent>
+        <img src="https://placehold.co/600x400" alt="">
+        <h3 class="name">Heba Hasan</h3>
+        <p>Heba@Yahoo.Com</p>
+        <p>Admin</p>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer">
+        <button nz-button nzType="primary">Change Password</button>
+        <button nz-button nzType="text">Show Company Branch Profile</button>
+    </div>
+</nz-modal>

@@ -141,7 +141,7 @@
     width: 100%;
     
 }
-::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+::ng-deep .ant-modal-body .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     height: 67px;
     border: 1px solid #E9E9F0;
     border-radius: 20px;
@@ -158,7 +158,7 @@
     align-items: center;
     font-weight: 300;
 }
-::ng-deep .ant-select-arrow{
+::ng-deep .ant-modal-body .ant-select-arrow{
     margin-top: -16px !important;
 }
 ::ng-deep .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
