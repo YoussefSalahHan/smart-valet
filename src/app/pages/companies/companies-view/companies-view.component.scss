@@ -16,7 +16,7 @@
         justify-content: space-between;
         li{
             border-inline-end:1px solid #ddd;
-            padding:0px 30px;
+            padding:0px 20px;
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -34,13 +34,13 @@
                 align-items: start;
             }
             p{
-                font-size: 22px;
+                font-size: 18px;
                 font-weight: bold;
                 margin-bottom: 0px;
             }
             span{
                 color: #A0A2A8;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 300;
                 .anticon.anticon-eye{
                     color:#2B50AA;
@@ -54,6 +54,9 @@
                         color: #15B62A;
                     }
                 }
+            }
+            &:last-child{
+                border:0px;
             }
         }
         .row{
@@ -81,7 +84,8 @@
     background: #fff;
     border-radius: 20px;
     margin-top: 20px;
-    padding: 23px 35px;
+    padding: 8px 25px;
+
     .earning-header{
         display: flex;
         align-items: center;
@@ -144,16 +148,16 @@
             padding-inline-start: 20px;
             border-inline-end: 1px solid #ddd;
             padding-inline-end: 20px;
-            margin-inline-start: 20px;
+            margin-inline-start: 15px;
             p,h3{
                 margin: 0px;
             }
             p{
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 300;
             }
             h3{
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: bold;
             }
             &:before{
