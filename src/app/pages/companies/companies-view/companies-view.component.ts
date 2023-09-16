@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class CompaniesViewComponent {
 
+  panels = [
+    {
+      active: true,
+      name: 'Branch Info',
+      disabled: false
+    },
+    {
+      active: true,
+      disabled: false,
+      name: 'Branch User Info'
+    }
+  ];
+
 }

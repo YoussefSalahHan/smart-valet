@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-companies-list',
@@ -6,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./companies-list.component.scss']
 })
 export class CompaniesListComponent {
+  constructor(private router: Router){
+
+  }
+
+  onRowClick(){
+    this.router.navigate(['companies/view/1']);
+  }
   listOfData = [
     {
       companyNo: '#1000',

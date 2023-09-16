@@ -1,0 +1,179 @@
+.company-details{
+    background: #2B50AA;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 150px;
+    padding-inline-start: 30px;
+    ul{
+        background: #fff;
+        height: 100%;
+        padding: 0px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            border-inline-end:1px solid #ddd;
+            padding:0px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-inline-start: 40px;
+            img{
+                width: 95px;
+                height: 95px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-inline-end: 10px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+            p{
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+            span{
+                color: #A0A2A8;
+                font-size: 18px;
+                font-weight: 300;
+                .anticon.anticon-eye{
+                    color:#2B50AA;
+                    margin-inline-start: 10px;
+                    position: relative;
+                    top:2px;
+                }
+                &.active{
+                    color: #15B62A;
+                    .anticon{
+                        color: #15B62A;
+                    }
+                }
+            }
+        }
+        .row{
+            flex-direction: row;
+            align-items: center;
+            label{
+                background: #F0F4F9;
+                border-radius: 20px;
+                width: 62px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-inline-end: 10px;
+                .anticon{
+                    color:#2B50AA;
+                    font-size: 24px;
+
+                }
+            }
+        }
+    }
+}
+.branch-details , .earning-branch-widget{
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 23px 35px;
+    .earning-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nz-select {
+            width: 110px;
+        }
+        .title{
+            font-weight: bold;
+        }
+        ::ng-deep .ant-select-arrow{
+            margin-top: -8px !important;
+        }
+    }
+
+}
+.ant-btn.ant-btn-round.ant-btn-lg {
+    height: 65px !important;
+    border-radius: 20px !important;
+    padding: 0px 70px !important;
+    border-color: #2B50AA;
+    color: #2B50AA;
+}
+
+.chart{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.download-pdf{
+    justify-content: start;
+    .ant-btn.ant-btn-round.ant-btn-lg {
+        height: 65px !important;
+        border-radius: 20px !important;
+        padding: 0px 70px !important;
+        border-color: #fff;
+        color: #fff;
+    }
+}
+.branch-details{
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: start;
+        padding-bottom: 25px;
+        li{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-inline-start: 20px;
+            border-inline-end: 1px solid #ddd;
+            padding-inline-end: 20px;
+            margin-inline-start: 20px;
+            p,h3{
+                margin: 0px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 300;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #2B50AA;
+                border-radius: 50%;
+                top: 4px;
+                inset-inline-start: 4px;
+
+            }
+            &:first-child{
+                margin-inline-start: 0px;
+            }
+            &:last-child{
+                padding-inline-end: 0px;
+                border:0px;
+            }
+        }
+    }
+}

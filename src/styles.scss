@@ -373,3 +373,52 @@ nz-space {
         }
     }
 }
+
+.ant-collapse {
+    border:0px;
+    .ant-collapse-item {
+        .ant-collapse-header{
+            background: #fff;
+            flex-flow: row-reverse;
+            align-items: center;
+            justify-content: start;
+            padding-inline-start: 20px;
+            color:#2B50AA;
+            font-size: 20px;
+            padding-inline-start: 50px;
+            padding-top: 25px;
+            border-bottom-color: #c2cbe5;
+            padding-bottom: 20px;
+            &:before{
+                content: "";
+                width: 39px;
+                height: 4px;
+                border-radius: 10px;
+                background: #2B50AA;
+                display: flex;
+                position: absolute;
+                inset-inline-start: 0px;
+                top: 36px;
+            }
+            .ant-collapse-arrow{
+                position: relative;
+                top: 0px;
+                right: 0px;
+                left: auto;
+                margin: 0;
+                transform: inherit;
+                padding-inline-start: 20px;
+                font-size: 18px;
+            }
+        }
+        &:last-child{
+            border:0px;
+        }
+    }
+    .ant-collapse-content-box{
+        padding: 0px;
+    }
+    .ant-collapse-content{
+        border:0px;
+    }
+}
