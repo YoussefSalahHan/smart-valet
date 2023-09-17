@@ -110,12 +110,125 @@
         padding-left: 45px;
         color: #2B50AA;
     }
-    .details{
-        padding-top: 20px;
-    }
+
     .custom-card {
         background: #FBFBFE;
         border-radius: 20px;
         padding: 10px;
+    }
+}
+
+::ng-deep .ant-collapse-header,
+::ng-deep .ant-collapse-content {
+    background: transparent !important;
+}
+
+::ng-deep .ant-collapse .ant-collapse-item .ant-collapse-header {
+    padding-inline-start: 35px;
+}
+
+::ng-deep .ant-collapse .ant-collapse-item .ant-collapse-header::before {
+    width: 25px;
+    height: 3px;
+    top: 40px;
+}
+
+::ng-deep .ant-collapse .ant-collapse-item .ant-collapse-header .ant-collapse-arrow {
+    top: 3px;
+    padding-inline-start: 9px;
+}
+
+.ant-collapse>.ant-collapse-item {
+    border-bottom: 1px solid #d9d9d9 !important;
+}
+
+.details {
+    padding-top: 20px;
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: start;
+        padding-bottom: 25px;
+
+        li {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-inline-start: 20px;
+            border-inline-end: 1px solid #ddd;
+            padding-inline-end: 20px;
+            margin-inline-start: 15px;
+
+            p,
+            h3 {
+                margin: 0px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #2B50AA;
+                border-radius: 50%;
+                top: 4px;
+                inset-inline-start: 4px;
+
+            }
+
+            &:first-child {
+                margin-inline-start: 0px;
+            }
+
+            &:last-child {
+                padding-inline-end: 0px;
+                border: 0px;
+            }
+        }
+    }
+
+    .note p {
+        background: #F0F4F9;
+        border-radius: 20px;
+        padding: 10px 50px 10px 15px;
+        width: fit-content;
+    }
+}
+
+.payment-info {
+    hr {
+        top: 20px;
+        left: 20px;
+    }
+
+    .ant-row {
+        padding: 5px;
+
+        p {
+            font-weight: bold;
+        }
+
+        nz-tag {
+            background: #15B62A;
+            color: #fff;
+        }
+    }
+
+    .br-bottom {
+        border-bottom: 1px solid #d9d9d9 !important;
     }
 }

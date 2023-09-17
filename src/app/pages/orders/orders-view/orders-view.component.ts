@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./orders-view.component.scss']
 })
 export class OrdersViewComponent {
-
+  orderArrowOpened = true;
 }

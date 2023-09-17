@@ -36,44 +36,147 @@
                     </nz-steps>
                 </div>
                 <div nz-row class="details">
-                    <div nz-col nzSpan="16" class="custom-card">col-16</div>
+                    <div nz-col nzSpan="16" class="custom-card">
+                        <nz-collapse nzExpandIconPosition="right">
+                            <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p>Check In</p>
+                                            <h3>03:00 Pm</h3>
+                                        </li>
+                                        <li>
+                                            <p>Check Out</p>
+                                            <h3>07:00 Pm</h3>
+                                        </li>
+                                        <li>
+                                            <p>Waiting Hours</p>
+                                            <h3>04:00</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                        <nz-collapse nzExpandIconPosition="right">
+                            <nz-collapse-panel [nzHeader]="'Note'" [nzActive]="true">
+                                <div class="note">
+                                    <p>Lorem Ipsum. "Neque Porro Quisquam Est Qucxsi Ccvcvcx Dolorem Red Flag</p>
+                                </div>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                        <nz-collapse nzExpandIconPosition="right">
+                            <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p>Car Brand</p>
+                                            <h3>BMW</h3>
+                                        </li>
+                                        <li>
+                                            <p>Car Modal</p>
+                                            <h3>M5</h3>
+                                        </li>
+                                        <li>
+                                            <p>Car Plate</p>
+                                            <h3>P 325 CC</h3>
+                                        </li>
+                                        <li>
+                                            <p>Car Location</p>
+                                            <h3>Aad Bin Obada, Al-S ,..</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                        <nz-collapse nzExpandIconPosition="right">
+                            <nz-collapse-panel [nzHeader]="'Customer Info'" [nzActive]="true">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p>Customer Name</p>
+                                            <h3>Heba Hasan</h3>
+                                        </li>
+                                        <li>
+                                            <p>Customer Phone Number</p>
+                                            <h3>+966 282 2148 524</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                        <nz-collapse nzExpandIconPosition="right">
+                            <nz-collapse-panel [nzHeader]="'Company Info'" [nzActive]="true">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p>Company / Branch Name</p>
+                                            <h3>Ahmed / Ahmed 2</h3>
+                                        </li>
+                                        <li>
+                                            <p>Branch Phone</p>
+                                            <h3>+966 242 2148 999</h3>
+                                        </li>
+                                        <li>
+                                            <p>Branch Location</p>
+                                            <h3>Aad Bin Obada, Al-S ,..</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
                     <div nz-col nzSpan="7" nzOffset="1">
                         <nz-space nzDirection="vertical">
                             <div *nzSpaceItem class="custom-card">
-                                <hr />
-                                <h2>Payments Info .</h2>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Price</div>
-                                    <div nz-col>30 SAR</div>
-                                </div>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Service Tax</div>
-                                    <div nz-col>10 SAR</div>
-                                </div>
-                                <hr>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Total Price</div>
-                                    <div nz-col>40 SAR</div>
+                                <div class="payment-info">
+                                    <hr />
+                                    <h2>Payments Info .</h2>
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>
+                                            <p>Price</p>
+                                        </div>
+                                        <div nz-col>30 SAR</div>
+                                    </div>
+                                    <div nz-row nzJustify="space-between" class="br-bottom">
+                                        <div nz-col>
+                                            <p>Service Tax</p>
+                                        </div>
+                                        <div nz-col>10 SAR</div>
+                                    </div>
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>
+                                            <p>Total Price</p>
+                                        </div>
+                                        <div nz-col>40 SAR</div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div *nzSpaceItem class="custom-card">
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Payment Method</div>
-                                    <div nz-col>My Wallet</div>
-                                </div>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Date</div>
-                                    <div nz-col>2 Dec 2023 | 10 : 00 Am</div>
-                                </div>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Transaction ID</div>
-                                    <div nz-col>623621123</div>
-                                </div>
-                                <div nz-row nzJustify="space-between">
-                                    <div nz-col>Status</div>
-                                    <div nz-col>
-                                        <nz-tag nzColor="success">Paid</nz-tag>
+                                <div class="payment-info">
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>
+                                            <p>Payment Method</p>
+                                        </div>
+                                        <div nz-col>My Wallet</div>
+                                    </div>
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>
+                                            <p>Date</p>
+                                        </div>
+                                        <div nz-col>2 Dec 2023 | 10 : 00 Am</div>
+                                    </div>
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>
+                                            <p>Transaction ID</p>
+                                        </div>
+                                        <div nz-col>623621123</div>
+                                    </div>
+                                    <div nz-row nzJustify="space-between">
+                                        <div nz-col>Status</div>
+                                        <div nz-col>
+                                            <nz-tag nzColor="success">Paid</nz-tag>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
