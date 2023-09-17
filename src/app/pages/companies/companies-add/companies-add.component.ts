@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./companies-add.component.scss']
 })
 export class CompaniesAddComponent {
+  loading = false;
+  avatarUrl?: string;
 
 }

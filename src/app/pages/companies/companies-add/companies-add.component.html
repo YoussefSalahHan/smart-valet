@@ -1,1 +1,106 @@
-<p>companies-add works!</p>
+<div class="page-container">
+    
+    <div class="widget">
+        <div class="widget-header">
+            <p class="widget-title">
+                <span class="widget-icon" nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Add Company
+            </p>
+        </div>
+        <div class="widget-body">
+            <div nz-row [nzGutter]="40" class="cards">
+                <div nz-col [nzSpan]="15">
+                  <nz-card class="gray">
+                    <h3 class="custom-title">Company Info .</h3>
+                    <div nz-row [nzGutter]="40">
+                        <div class="upload-widget" nz-col [nzSpan]="24">
+                            <nz-upload
+                            class="avatar-uploader"
+                            nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                            nzName="avatar"
+                            nzListType="picture-card"
+                            [nzShowUploadList]="false"
+                            >
+                            <ng-container *ngIf="!avatarUrl">
+                                <span class="upload-icon" nz-icon [nzType]="loading ? 'loading' : 'plus'"></span>
+                                <div class="ant-upload-text">Upload</div>
+                                </ng-container>
+                                <img *ngIf="avatarUrl" [src]="avatarUrl" style="width: 100%" />
+                            </nz-upload>
+                            <h3>Upload Company Logo</h3>
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>Company Name</label>
+                            <input nz-input placeholder="Branch Name" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>CR Number</label>
+                            <input nz-input placeholder="CR Number" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Tax #</label>
+                            <input nz-input placeholder="Tax #" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Email</label>
+                            <input nz-input placeholder="Email" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Phone Number</label>
+                            <input nz-input placeholder="Phone Number" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>National Address</label>
+                            <input nz-input placeholder="National Address" />
+                        </div>
+                        <div class="times-of-work" nz-col [nzSpan]="24">
+                            <a nz-button nzType="text"><span nz-icon nzType="plus-circle" nzTheme="outline"></span>Add Branch</a>
+                        </div>
+                    </div>
+                  </nz-card>
+                </div>
+                <div nz-col [nzSpan]="9">
+                    <nz-card class="gray add-order-summary">
+                        <h3 class="custom-title">Company Manager Info .</h3>
+                        <div nz-row [nzGutter]="40">
+                            <div class="input-widget" nz-col [nzSpan]="24">
+                                <label>Manager Name</label>
+                                <input nz-input placeholder="Manager Name" />
+                            </div>
+                            <div class="input-widget" nz-col [nzSpan]="24">
+                                <label>Company Manager Phone</label>
+                                <input nz-input placeholder="Company Manager Phone" class="margin-0" />
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="times-of-work">
+                            <h3 class="custom-title">Times Of Work .</h3>
+                            <a nz-button nzType="text"><span nz-icon nzType="plus-circle" nzTheme="outline"></span> Add Times Of Work</a>
+                        </div>
+
+                        <hr>
+                        <h3 class="custom-title">Additional Info .</h3>
+                        <div nz-row [nzGutter]="40">
+                            <div class="input-widget" nz-col [nzSpan]="12">
+                                <label>Service Charge</label>
+                                <input nz-input placeholder="Service Charge" type="number"/>
+                            </div>
+                            <div class="input-widget" nz-col [nzSpan]="12">
+                                <label>Type</label>
+                                <nz-select ngModel="lucy" nzPlaceHolder="Type">
+                                    <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                                    <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                                  </nz-select>
+                            </div>
+                        </div>
+
+                    </nz-card>
+                  </div>
+            </div>
+            <div class="custom-footer">
+                <button nz-button nzType="primary" nzSize="large" nzShape="round" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

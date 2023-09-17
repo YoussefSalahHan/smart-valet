@@ -15,6 +15,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { NzUploadModule } from 'ng-zorro-antd/upload';
 
 
 
@@ -39,7 +40,8 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     NzIconModule,
     NzModalModule,
     NzInputModule,
-    NzRadioModule
+    NzRadioModule,
+    NzUploadModule
   ]
 })
 export class CompaniesModule { }

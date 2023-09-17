@@ -1,0 +1,85 @@
+.upload-widget{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    ::ng-deep .ant-upload.ant-upload-select.ant-upload-select-picture-card.ng-star-inserted {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background: #eff1f9;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 0px;
+        .ant-upload-text{
+            display: none;
+        }
+        span.anticon.upload-icon.anticon-plus.ng-star-inserted{
+            border: 1px dashed #2B50AA;
+            color: #2B50AA;
+            font-size: 18px;
+            font-weight: bold;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .ant-upload-picture-card-wrapper{
+        width: fit-content;
+    }
+    h3{
+        font-size: 18px;
+        padding: 10px 0px;
+        padding-inline-start: 15px;
+        border-inline-start: 1px solid #ddd;
+        margin: 0px;
+        margin-inline-start: 15px;
+        font-weight: 200;
+    }
+}
+.times-of-work{
+    a{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+}
+.custom-footer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+hr{
+    border: 1px solid #ddd;
+    border-top: 0px;
+    margin: 30px 0px;
+}
+::ng-deep .ant-select {
+    width: 100%;
+}
+::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    height: 67px;
+    border: 1px solid #E9E9F0;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
+    height: 67px;
+}
+::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-placeholder,
+::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-item
+{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+::ng-deep .ant-select-arrow{
+    margin-top: -16px !important;
+}
+::ng-deep .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+    padding: 0 22px;
+}

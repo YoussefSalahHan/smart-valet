@@ -12,7 +12,7 @@ export class CompaniesListComponent {
   }
 
   addCompany(){
-    this.router.navigate(['branches/edit']);
+    this.router.navigate(['companies/add']);
   }
 
   onRowClick(){
