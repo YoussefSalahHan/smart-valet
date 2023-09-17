@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-companies-view',
-  templateUrl: './companies-view.component.html',
-  styleUrls: ['./companies-view.component.scss']
+  selector: 'app-view-branch',
+  templateUrl: './view-branch.component.html',
+  styleUrls: ['./view-branch.component.scss']
 })
-export class CompaniesViewComponent {
+export class ViewBranchComponent {
   isVisible = false;
   radioValue = 'A'; 
 
@@ -25,19 +25,13 @@ export class CompaniesViewComponent {
   panels = [
     {
       active: true,
-      name: 'Company Info',
+      name: 'Branch Info',
       disabled: false
     },
     {
       active: true,
       disabled: false,
-      name: 'Company Manager Info'
-    }
-    ,
-    {
-      active: true,
-      disabled: false,
-      name: 'Branch Info'
+      name: 'Branch User Info'
     }
   ];
 

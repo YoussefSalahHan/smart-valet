@@ -9,12 +9,17 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
+import { ViewBranchComponent } from './view-branch/view-branch.component';
+import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+
 
 
 
 @NgModule({
   declarations: [
-    EditBranchComponent
+    EditBranchComponent,
+    ViewBranchComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +29,11 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     NzButtonModule,
     NzIconModule,
     NzInputModule,
-    NzSwitchModule
+    NzSwitchModule,
+    NzCollapseModule,
+    NzInputModule,
+    NzSelectModule
+    
   ]
 })
 export class BranchesModule { }

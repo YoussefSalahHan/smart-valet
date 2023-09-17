@@ -38,14 +38,14 @@
             <div class="branch-details">
                 <nz-collapse nzExpandIconPosition="right">
                     <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active">
-                      <div  *ngIf="panel.name == 'Company Info'">
+                      <div  *ngIf="panel.name == 'Branch Info'">
                         <ul>
                             <li>
-                                <p>Company Email</p>
+                                <p>Branch Email</p>
                                 <h3>Dasd@GMAIL.COM</h3>
                             </li>
                             <li>
-                                <p>Company Number</p>
+                                <p>Branch Number</p>
                                 <h3>+966 242 2148 999</h3>
                             </li>
                             <li>
@@ -54,33 +54,17 @@
                             </li>
                         </ul>
                       </div>
-                      <div  *ngIf="panel.name == 'Company Manager Info'">
+                      <div  *ngIf="panel.name == 'Branch User Info'">
                         <ul>
                             <li>
-                                <p>ManagerName</p>
+                                <p>User Branch Name</p>
                                 <h3>Ali Abdu Ebrahim</h3>
                             </li>
                             <li>
-                                <p>Manager Phone Number</p>
+                                <p>User Branch Phone Number</p>
                                 <h3>+966 282 2148 524</h3>
                             </li>
                         </ul>
-                      </div>
-                      <div  *ngIf="panel.name == 'Branch Info'" class="panel-branch-info">
-                        <ul>
-                            <li>
-                                <p>Branch Name</p>
-                                <h3>Ali Abdu Ebrahim</h3>
-                            </li>        
-                        </ul>
-                        <div class="row branch-location-widget">
-                            <label><span nz-icon nzType="environment" nzTheme="outline"></span></label>
-                            <div>
-                                <p>Branch Location</p>
-                                <span>Aad Bin Obada,..</span> 
-                            </div>
-                        </div>
-                        <a nz-button nzType="text">Show 8 Branches</a>
                       </div>
                     </nz-collapse-panel>
                   </nz-collapse>
@@ -115,19 +99,3 @@
     </div>
 </div>
 
-
-<nz-modal [(nzVisible)]="isVisible" nzTitle="SELECT STATUS" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="change-status-modal">
-    <ng-container *nzModalContent>
-        <nz-radio-group>
-            <label nz-radio nzValue="A" class="pending">Pending</label>
-            <label nz-radio nzValue="B" class="parked">Car Parked By Employee</label>
-            <label nz-radio nzValue="C" class="requested">Car Requested By Customer</label>
-            <label nz-radio nzValue="D" class="ready">Car Ready By Employee</label>
-            <label nz-radio nzValue="E" class="deliverd">Car Delivered By Employee</label>
-
-        </nz-radio-group>
-    </ng-container>
-    <div *nzModalFooter class="custom-footer">
-        <button nz-button nzType="primary">Submit</button>
-    </div>
-</nz-modal>

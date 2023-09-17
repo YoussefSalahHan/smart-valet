@@ -41,7 +41,7 @@ import { NzUploadModule } from 'ng-zorro-antd/upload';
     NzModalModule,
     NzInputModule,
     NzRadioModule,
-    NzUploadModule
+    NzUploadModule,
   ]
 })
 export class CompaniesModule { }
