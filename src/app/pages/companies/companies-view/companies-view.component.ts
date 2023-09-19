@@ -8,18 +8,27 @@ import { Component } from '@angular/core';
 export class CompaniesViewComponent {
   isVisible = false;
   radioValue = 'A'; 
+  showCompanyBranches = false;
 
 
   changeStatus(){
     this.isVisible = true;
   }
 
+  changeCompanyStatus(){
+    this.showCompanyBranches = true;
+  }
+
   handleCancel(){
     this.isVisible = false;
+    this.showCompanyBranches = false;
+
   }
   
   handleOk(){
     this.isVisible = false;
+    this.showCompanyBranches = false;
+
   }
 
   panels = [

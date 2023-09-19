@@ -80,7 +80,7 @@
                                 <span>Aad Bin Obada,..</span> 
                             </div>
                         </div>
-                        <a nz-button nzType="text">Show 8 Branches</a>
+                        <a nz-button nzType="text" (click)="changeCompanyStatus()">Show 8 Branches</a>
                       </div>
                     </nz-collapse-panel>
                   </nz-collapse>
@@ -129,5 +129,52 @@
     </ng-container>
     <div *nzModalFooter class="custom-footer">
         <button nz-button nzType="primary">Submit</button>
+    </div>
+</nz-modal>
+
+<!-- Show Company branches -->
+<nz-modal [(nzVisible)]="showCompanyBranches" nzTitle="SHOW COMPANY BRANCHES" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="change-status-modal">
+    <ng-container *nzModalContent>
+        <div class="list-branches">
+            <ul>
+                <li>
+                    <p>Branch No.</p>
+                    <p>Branch Name</p>
+                    <p>Branch Location</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer">
     </div>
 </nz-modal>
