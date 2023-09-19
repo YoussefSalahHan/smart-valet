@@ -75,7 +75,7 @@
                         <hr>
                         <div class="times-of-work">
                             <h3 class="custom-title">Times Of Work .</h3>
-                            <a nz-button nzType="text"><span nz-icon nzType="plus-circle" nzTheme="outline"></span> Add Times Of Work</a>
+                            <a nz-button nzType="text" (click)="changeStatus()"><span nz-icon nzType="plus-circle" nzTheme="outline"></span> Add Times Of Work</a>
                         </div>
 
                         <hr>
@@ -104,3 +104,121 @@
         </div>
     </div>
 </div>
+
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="ADD TIMES OF WORK" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="times-of-work-sheet">
+    <ng-container *nzModalContent>
+        <div class="times-of-work-sheet">
+            <ul>
+                <li>
+                    <p>Saturday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Sunday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Monday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Tuesday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Wedensday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Thursday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+                <li>
+                    <p>Friday</p>
+                    <span>From</span>
+                    <nz-select nzPlaceHolder="08 : 00 am">
+                        <nz-option nzValue="jack" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="08 : 00 am"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="08 : 00 am" nzDisabled></nz-option>
+                      </nz-select>
+                    <span>To</span>
+                    <nz-select nzPlaceHolder="12 : 00 pm">
+                        <nz-option nzValue="jack" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="12 : 00 pm"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="12 : 00 pm" nzDisabled></nz-option>
+                      </nz-select>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer-popup">
+        <button nz-button nzType="primary">Submit</button>
+    </div>
+</nz-modal>

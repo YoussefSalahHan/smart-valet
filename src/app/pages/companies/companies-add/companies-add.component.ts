@@ -8,5 +8,21 @@ import { Component } from '@angular/core';
 export class CompaniesAddComponent {
   loading = false;
   avatarUrl?: string;
+  isVisible = false;
+
+  changeStatus(){
+    this.isVisible = true;
+  }
+
+
+  handleCancel(){
+    this.isVisible = false;
+
+  }
+  
+  handleOk(){
+    this.isVisible = false;
+  }
+
 
 }
