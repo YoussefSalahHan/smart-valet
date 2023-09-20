@@ -1,0 +1,18 @@
+.ant-tag {
+    height: 40px;
+    border-radius: 20px;
+    color: #cce7e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+
+    &-success {
+        background: #cce7e1;
+        color: #00856B;
+    }
+    &-error {
+        background: rgba(243, 73, 73, 0.2);
+        color: #F22525;
+    }
+}

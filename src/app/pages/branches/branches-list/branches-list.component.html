@@ -1,0 +1,81 @@
+<div class="page-container">
+    <div class="custom-table">
+        <div class="table-header">
+            <h2>Branches</h2>
+            <div class="filters">
+                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                    branch
+                    <span nz-icon nzType="down"></span>
+                </a>
+                <nz-dropdown-menu #menu="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item>Approved</li>
+                        <li nz-menu-item>Pending</li>
+                        <li nz-menu-item>New</li>
+                    </ul>
+                </nz-dropdown-menu>
+                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                    City
+                    <span nz-icon nzType="down"></span>
+                </a>
+                <nz-dropdown-menu #menu="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item>Approved</li>
+                        <li nz-menu-item>Pending</li>
+                        <li nz-menu-item>New</li>
+                    </ul>
+                </nz-dropdown-menu>
+                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                    Status
+                    <span nz-icon nzType="down"></span>
+                </a>
+                <nz-dropdown-menu #menu="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item>Approved</li>
+                        <li nz-menu-item>Pending</li>
+                        <li nz-menu-item>New</li>
+                    </ul>
+                </nz-dropdown-menu>
+                <button nz-button nzType="default" nzSize="large" nzShape="round" (click)="addCompany()"> <span nz-icon
+                        nzType="plus-circle"></span> Add Branch </button>
+            </div>
+        </div>
+        <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
+            <thead>
+                <tr>
+                    <th>Branch No.</th>
+                    <th>Branch Name</th>
+                    <th>Service Charge</th>
+                    <th>City</th>
+                    <th>Income</th>
+                    <th>Orders</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of basicTable.data;let i=index">
+                    <td>{{ data.companyNo }}</td>
+                    <td>{{ data.companyName }}</td>
+                    <td>{{ data.branchesNo }}</td>
+                    <td>{{ data.city }}</td>
+                    <td>{{ data.icome }}</td>
+                    <td>{{ data.orders }}</td>
+                    <td>
+                        <nz-tag *ngIf="i % 2 == 0" nzColor="success">{{ data.status }}
+                        <span nz-icon nzType="down" nzTheme="outline"></span>
+                        </nz-tag>
+                        <nz-tag *ngIf="i % 2 != 0" nzColor="error">{{ data.status }}
+                        <span nz-icon nzType="down" nzTheme="outline"></span>
+                        </nz-tag>
+                    </td>
+                    <td>
+                        <a [routerLink]="['/orders/view/'+data.companyNo]">
+                          <img src="/assets/svg/orders/vuesax-bold-eye.svg" alt="">
+                        </a>
+                      </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>
