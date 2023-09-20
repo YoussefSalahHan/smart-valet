@@ -23,6 +23,9 @@
         }
     }
 }
+.widget-footer{
+    margin-top: 30px;
+}
 
 .ant-card {
     border-radius: 0;
@@ -230,5 +233,30 @@
 
     .br-bottom {
         border-bottom: 1px solid #d9d9d9 !important;
+    }
+}
+::ng-deep .qr-code{
+    .ant-modal-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    p{
+        font-weight: 18px;
+    }
+    img{
+        width: 180px;
+        height: 180px;  
+        object-fit: cover;
+    }
+    .custom-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ant-btn{
+            width: 45%;
+            padding: 0px !important;
+        }
     }
 }

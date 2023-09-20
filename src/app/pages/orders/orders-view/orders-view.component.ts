@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./orders-view.component.scss']
 })
 export class OrdersViewComponent {
-  orderArrowOpened = true;
+  isVisible = true;
+  orderArrowOpened = false;
+
+  openQRCodeModal(){
+    this.isVisible = true;
+  }
+
+  handleOk(){
+    this.isVisible = false;
+  }
+
+  handleCancel(){
+    this.isVisible = false;
+  }
 }
