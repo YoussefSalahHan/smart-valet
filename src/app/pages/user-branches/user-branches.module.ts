@@ -16,6 +16,8 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTagModule } from 'ng-zorro-antd/tag';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
     NzModalModule,
     NzDropDownModule,
     NzTableModule,
-    NzTagModule
+    NzTagModule,
+    NzCheckboxModule
   ]
 })
 export class UserBranchesModule { }

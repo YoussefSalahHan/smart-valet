@@ -39,7 +39,7 @@
                         <h3 class="custom-title">Company / Branch Info .</h3>
                         <div nz-row [nzGutter]="40">
                             <div class="input-widget" nz-col [nzSpan]="24">
-                                <label>Branch Name</label>
+                                <label (click)="selectBranch()">Branch Name</label>
                                 <nz-select ngModel="lucy" nzPlaceHolder="Branch">
                                     <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
                                     <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
@@ -56,3 +56,58 @@
         </div>
     </div>
 </div>
+
+<!-- Show Company branches -->
+<nz-modal [(nzVisible)]="isVisibile" nzTitle="SELECT BRANCH" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="select-branches">
+    <ng-container *nzModalContent>
+        <div class="list-branches">
+            <ul>
+                <li>
+                    <label class="checkbox"></label>
+                    <p>Branch No.</p>
+                    <p>Branch Name</p>
+                    <p>Branch Location</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+                <li>
+                    <label nz-checkbox></label>
+                    <p>#1000</p>
+                    <p>AHMED 1</p>
+                    <p><span nz-icon nzType="environment" nzTheme="outline"></span>Aad Bin Obada, Al-S ,..</p>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer">
+        <button nz-button nzType="primary" nzSize="large" nzShape="round" class="submit-button">Submit</button>
+    </div>
+</nz-modal>

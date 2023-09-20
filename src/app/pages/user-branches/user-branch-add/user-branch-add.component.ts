@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-branch-add.component.scss']
 })
 export class UserBranchAddComponent {
+  isVisibile = false;
+
+  selectBranch(){
+    this.isVisibile = true;
+  }
+  handleCancel(){
+    this.isVisibile = false;
+  }
+
+  handleOk(){
+    this.isVisibile = false;
+  }
 
 }
