@@ -2,18 +2,18 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-branches-list',
-  templateUrl: './branches-list.component.html',
-  styleUrls: ['./branches-list.component.scss']
+  selector: 'app-user-branches-list',
+  templateUrl: './user-branches-list.component.html',
+  styleUrls: ['./user-branches-list.component.scss']
 })
-export class BranchesListComponent {
+export class UserBranchesListComponent {
 
   constructor(private router : Router){
 
   }
 
-  addBranch(){
-    this.router.navigate(['branches/add']);
+  addUserBranch(){
+    this.router.navigate(['user-branches/add']);
   }
 
   listOfData = [

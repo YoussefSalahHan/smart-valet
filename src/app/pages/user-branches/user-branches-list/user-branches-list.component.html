@@ -1,0 +1,48 @@
+<div class="page-container">
+    <div class="custom-table">
+        <div class="table-header">
+            <h2>Users Branches</h2>
+            <div class="filters">
+                <button nz-button nzType="default" nzSize="large" nzShape="round" (click)="addUserBranch()"> <span nz-icon
+                        nzType="plus-circle"></span> Add User Branch </button>
+            </div>
+        </div>
+        <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
+            <thead>
+                <tr>
+                    <th>User No.</th>
+                    <th>User Name</th>
+                    <th>Phone No.</th>
+                    <th>Email</th>
+                    <th>Branch</th>
+                    <th>City</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of basicTable.data;let i=index">
+                    <td>{{ data.companyNo }}</td>
+                    <td>{{ data.companyName }}</td>
+                    <td>{{ data.branchesNo }}</td>
+                    <td>{{ data.city }}</td>
+                    <td>{{ data.icome }}</td>
+                    <td>{{ data.orders }}</td>
+                    <td>
+                        <nz-tag *ngIf="i % 2 == 0" nzColor="success">{{ data.status }}
+                        <span nz-icon nzType="down" nzTheme="outline"></span>
+                        </nz-tag>
+                        <nz-tag *ngIf="i % 2 != 0" nzColor="error">{{ data.status }}
+                        <span nz-icon nzType="down" nzTheme="outline"></span>
+                        </nz-tag>
+                    </td>
+                    <td>
+                        <a [routerLink]="['/orders/view/'+data.companyNo]">
+                          <img src="/assets/svg/orders/vuesax-bold-eye.svg" alt="">
+                        </a>
+                      </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

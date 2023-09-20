@@ -1,0 +1,54 @@
+::ng-deep  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    height: 67px;
+    border: 1px solid #E9E9F0;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
+    height: 67px;
+}
+::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-placeholder,
+::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-item
+{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+::ng-deep  .ant-select-arrow{
+    margin-top: -16px !important;
+}
+::ng-deep .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+    padding: 0 22px;
+}
+.custom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ant-select{
+    width: 100%;
+}
+.footer-widget{
+    display: flex;
+    align-items: start;
+    margin-top: 30px;
+}
+.switcher-widget{
+    display: flex;
+    align-items: center;
+    label{
+        font-size: 18px;
+        font-weight: 500;
+        margin-inline-end: 10px;
+    }
+    ::ng-deep .ant-switch-checked{
+       background:#15B62A !important;
+    }
+    span{
+       color: #15B62A;
+       margin-inline-start: 15px;
+       font-size: 16px;
+       font-weight: 300;
+    }
+}

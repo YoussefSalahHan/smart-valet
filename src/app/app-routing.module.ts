@@ -12,6 +12,9 @@ const routes: Routes = [
   { path: 'notifications', loadChildren: () => import('./pages/notifications/notifications.module').then(m => m.NotificationsModule) },
   { path: 'profile', loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule) },
   { path: 'branches', loadChildren: () => import('./pages/branches/branches.module').then(m => m.BranchesModule) },
+  { path: 'user-branches', loadChildren: () => import('./pages/user-branches/user-branches.module').then(m => m.UserBranchesModule) },
+
+ 
 
 
 ];

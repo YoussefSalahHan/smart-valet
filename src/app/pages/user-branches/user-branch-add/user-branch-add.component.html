@@ -1,0 +1,58 @@
+<div class="page-container">
+    
+    <div class="widget">
+        <div class="widget-header">
+            <p class="widget-title">
+                <span class="widget-icon" nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Add User Branch
+            </p>
+        </div>
+        <div class="widget-body">
+            <div nz-row [nzGutter]="40" class="cards">
+                <div nz-col [nzSpan]="15">
+                  <nz-card class="gray">
+                    <h3 class="custom-title">Branch User Info .</h3>
+                    <div nz-row [nzGutter]="40">
+                        <div class="input-widget" nz-col [nzSpan]="24">
+                            <label>User Name</label>
+                            <input nz-input placeholder="Branch Name" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Email</label>
+                            <input nz-input placeholder="Branch Email" />
+                        </div>
+                        <div class="input-widget" nz-col [nzSpan]="12">
+                            <label>Phone Number</label>
+                            <input nz-input placeholder="Phone Number" />
+                        </div>
+                        <div class="switcher-widget" nz-col [nzSpan]="24">
+                            <label>Status :</label> 
+                            <nz-switch></nz-switch>
+                            <span>Active</span>
+ 
+                        </div>
+                    </div>
+                  </nz-card>
+                </div>
+                <div nz-col [nzSpan]="9">
+                    <nz-card class="gray add-order-summary">
+                        <h3 class="custom-title">Company / Branch Info .</h3>
+                        <div nz-row [nzGutter]="40">
+                            <div class="input-widget" nz-col [nzSpan]="24">
+                                <label>Branch Name</label>
+                                <nz-select ngModel="lucy" nzPlaceHolder="Branch">
+                                    <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                                    <nz-option nzValue="disabled" nzLabel="Disabled"></nz-option>
+                                </nz-select>
+                            </div>
+                        </div>
+                    </nz-card>
+                  </div>
+            </div>
+            <div class="footer-widget">
+                <button nz-button nzType="primary" nzSize="large" nzShape="round" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
