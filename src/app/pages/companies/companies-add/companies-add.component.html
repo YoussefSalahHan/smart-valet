@@ -54,7 +54,7 @@
                             <input nz-input placeholder="National Address" />
                         </div>
                         <div class="times-of-work" nz-col [nzSpan]="24">
-                            <a nz-button nzType="text"><span nz-icon nzType="plus-circle" nzTheme="outline"></span>Add Branch</a>
+                            <a nz-button nzType="text" (click)="openSelectCompanyPopup()"><span nz-icon nzType="plus-circle" nzTheme="outline"></span>Add Branch</a>
                         </div>
                     </div>
                   </nz-card>
@@ -219,6 +219,103 @@
         </div>
     </ng-container>
     <div *nzModalFooter class="custom-footer-popup">
+        <button nz-button nzType="primary">Submit</button>
+    </div>
+</nz-modal>
+
+
+
+<nz-modal [(nzVisible)]="selectCompanyFlag" nzTitle="SELECT COMAPNY" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="select-company-modal">
+    <ng-container *nzModalContent>
+        <div class="input-widget">
+            <input type="text" nz-input placeholder="search" />
+            <span nz-icon nzType="search" nzTheme="outline"></span>
+        </div>
+        <ul class="user-branches-list-widget">
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+            <li nz-checkbox >
+                <div class="user-data">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <div >
+                        <p>Ahmed</p>
+                        <span>#29832</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </ng-container>
+    <div *nzModalFooter class="footer-widget">
         <button nz-button nzType="primary">Submit</button>
     </div>
 </nz-modal>

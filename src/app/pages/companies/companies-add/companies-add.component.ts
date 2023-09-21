@@ -9,6 +9,11 @@ export class CompaniesAddComponent {
   loading = false;
   avatarUrl?: string;
   isVisible = false;
+  selectCompanyFlag = false;
+
+  openSelectCompanyPopup(){
+    this.selectCompanyFlag = true; 
+  }
 
   changeStatus(){
     this.isVisible = true;
@@ -17,11 +22,13 @@ export class CompaniesAddComponent {
 
   handleCancel(){
     this.isVisible = false;
+    this.selectCompanyFlag = false;
 
   }
   
   handleOk(){
     this.isVisible = false;
+    this.selectCompanyFlag = false;
   }
 
 

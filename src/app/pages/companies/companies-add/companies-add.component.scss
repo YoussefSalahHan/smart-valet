@@ -141,3 +141,105 @@ hr{
     display: flex;
     margin-top: 40px;
 }
+
+::ng-deep .select-company-modal{
+    width: 70vw !important;
+    .input-widget{
+        margin-top: 20px;
+        position: relative;
+        input{
+            padding-inline-start: 50px;
+            font-size: 16px;
+        }
+        .anticon{
+            position: absolute;
+            top: 23%;
+            left: 20px;
+            font-size: 22px;
+            color: #A0A2A8;
+        }
+    }
+    .footer-widget{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+::ng-deep .user-branches-list-widget{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+        margin-left: 0px;
+    }
+    li{
+        width: calc((100% - 54px) / 3);
+        margin-inline-end: 27px;
+        border-radius: 20px;
+        border:1px solid #f1f1f2;
+        padding: 18px;
+        margin-bottom: 18px;
+        align-items: center;
+        background: #FBFBFE;
+        &:nth-child(3n+0){
+            margin-inline-end: 0px;
+        }
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 0px 12px;
+            }
+            .user-data{
+                display: flex;
+                align-items: center;
+                p{
+                    margin: 0px;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                span{
+                    font-weight: 300;
+                    color: #A0A2A8;
+                    font-size: 12px;
+                }
+            }
+        .ant-checkbox + span{
+            padding: 0px;
+        }
+        .ant-checkbox-inner{
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            top: -3px;
+        }
+        .ant-checkbox-inner::after{
+            left: 27.5%;
+        }
+        .ant-checkbox:hover::after, .ant-checkbox-wrapper:hover .ant-checkbox::after{
+            display: none;
+        }
+        &.ant-checkbox-wrapper-checked{
+            background: #2B50AA;
+            .user-data{
+                p , span{
+                    color: #fff;
+                }
+            }
+            .ant-checkbox-inner{
+                background: #FFF;
+            }
+            .ant-checkbox-inner::after{
+                border-color: #2B50AA;
+            }
+            .ant-checkbox-checked::after{
+                border:0px
+            }
+        }
+    }
+}
