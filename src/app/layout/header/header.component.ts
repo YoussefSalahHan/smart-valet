@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   isVisible = false;
+  changePassword = false;
+  passwordVisible = true;
 
   constructor(private router:Router){
 
@@ -19,11 +21,19 @@ export class HeaderComponent {
 
   handleCancel(){
     this.isVisible = false;
+    this.changePassword = false;
   }
   
   handleOk(){
     this.isVisible = false;
+    this.changePassword = false;
+
   }
+  openChangePassword(){
+    this.changePassword = true;
+    this.isVisible = false;
+  }
+
 
   openNotifications(){
     this.router.navigate(['notifications/list']);

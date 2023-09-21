@@ -36,7 +36,36 @@
         <p>Admin</p>
     </ng-container>
     <div *nzModalFooter class="custom-footer">
-        <button nz-button nzType="primary">Change Password</button>
+        <button nz-button nzType="primary" (click)="openChangePassword()">Change Password</button>
         <button nz-button nzType="text">Show Company Branch Profile</button>
+    </div>
+</nz-modal>
+
+<nz-modal [(nzVisible)]="changePassword" nzTitle="CHANGE PASSWORD" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="change-password-modal">
+    <ng-container *nzModalContent>
+        <div class="input-widget" nz-col [nzSpan]="24">
+            <label>Old Password</label>
+            <div class="password-widget">
+                <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+                <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible"></span>
+            </div>
+        </div>
+        <div class="input-widget" nz-col [nzSpan]="24">
+            <label>New Password</label>
+            <div class="password-widget">
+                <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+                <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible"></span>
+            </div>
+        </div>
+        <div class="input-widget" nz-col [nzSpan]="24">
+            <label>Confirm New Password</label>
+            <div class="password-widget">
+                <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+                <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible"></span>
+            </div>
+        </div>
+    </ng-container>
+    <div *nzModalFooter class="custom-footer">
+        <button nz-button nzType="primary">Submit</button>
     </div>
 </nz-modal>
