@@ -55,10 +55,18 @@
     margin-bottom: 30px;
 
     .filters {
+        display: flex;
+        align-items: center;
         .ant-dropdown-link {
             color: #fff;
             font-size: 18px;
             padding-inline-end: 30px;
+        }
+        .sort{
+            color: #fff;
+            font-size: 18px;
+            padding-inline-end: 30px;
+            margin: 0px;
         }
     }
 

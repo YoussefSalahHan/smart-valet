@@ -56,6 +56,7 @@
     <div class="table-header">
       <h2>Orders</h2>
       <div class="filters">
+        <p class="sort" (click)="sort()">Sort</p>
 
         <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
           Date
@@ -120,3 +121,11 @@
     </nz-table>
   </div>
 </div>
+
+
+<nz-modal [(nzVisible)]="sortPopupFlag" nzTitle="SORT BY" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="sort-by-modal">
+  <div *nzModalFooter class="custom-footer">
+      <button nz-button nzType="primary">The Most Recent</button>
+      <button nz-button nzType="default">The Oldest</button>
+  </div>
+</nz-modal>

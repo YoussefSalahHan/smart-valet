@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 
 export class OrdersListComponent implements OnInit {
+  sortPopupFlag = false;
 
   constructor(private router :  Router){
 
@@ -16,6 +17,18 @@ export class OrdersListComponent implements OnInit {
 
   addOrder(){
     this.router.navigate(['orders/add']);
+  }
+
+  sort(){
+    this.sortPopupFlag = true;
+  }
+
+  handleCancel(){
+    this.sortPopupFlag = false;
+  }
+
+  handleOk(){
+    this.sortPopupFlag = false;
   }
   
 
