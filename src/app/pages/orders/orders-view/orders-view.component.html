@@ -175,7 +175,7 @@
                                     <div nz-row nzJustify="space-between">
                                         <div nz-col>Status</div>
                                         <div nz-col>
-                                            <nz-tag nzColor="success">Paid</nz-tag>
+                                            <nz-tag nzColor="success" (click)="openPaymentStatus()">Paid</nz-tag>
                                         </div>
                                     </div>
                                 </div>
@@ -198,5 +198,22 @@
         <div *nzModalFooter class="custom-footer">
             <button nz-button nzType="primary" disabled>Activation</button>
             <button nz-button nzType="primary">Deactivation</button>
+        </div>
+    </nz-modal>
+
+    <nz-modal [(nzVisible)]="openPaymentStatusFlag" nzTitle="PAYMENT STATUS" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="payment-status-modal">
+        <ng-container *nzModalContent>
+            <nz-radio-group>
+                <label nz-radio nzValue="A" class="parent-radio success">Paid</label>
+                <nz-radio-group class="inside-radio-group">
+                    <label nz-radio nzValue="B" [nzDisabled]="true">Cash</label>
+                    <label nz-radio nzValue="C">Through The Restaurant</label>
+                    <label nz-radio nzValue="D">Through The Hotel</label>
+                  </nz-radio-group>
+                <label nz-radio nzValue="D" class="parent-radio danger">Unpaid</label>
+              </nz-radio-group>
+        </ng-container>
+        <div *nzModalFooter class="custom-footer">
+            <button nz-button nzType="primary">Submit</button>
         </div>
     </nz-modal>

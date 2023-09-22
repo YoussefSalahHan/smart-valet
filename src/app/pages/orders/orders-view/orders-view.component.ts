@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class OrdersViewComponent {
   isVisible = false;
   orderArrowOpened = false;
+  openPaymentStatusFlag = false;
 
   openQRCodeModal(){
     this.isVisible = true;
@@ -15,9 +16,15 @@ export class OrdersViewComponent {
 
   handleOk(){
     this.isVisible = false;
+    this.openPaymentStatusFlag = false;
   }
 
   handleCancel(){
     this.isVisible = false;
+    this.openPaymentStatusFlag = false;
+  }
+
+  openPaymentStatus(){
+    this.openPaymentStatusFlag = true;
   }
 }

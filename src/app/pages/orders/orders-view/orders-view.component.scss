@@ -260,3 +260,60 @@
         }
     }
 }
+::ng-deep .payment-status-modal{
+    .ant-radio-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .ant-radio-wrapper.parent-radio{
+        border-radius: 20px;
+        height: 60px;
+        width: 100%;
+        background: #FBFBFE;
+        border:1px solid #ddd;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        &.success{
+            color:#15B62A;
+        }
+        &.danger{
+            color:#F22525;
+        }
+        .ant-radio-inner{
+            position: relative;
+            top:-2px
+        }
+        span{
+            font-size: 18px;
+            font-weight: bold; 
+            position: relative;
+            top: 2px;
+        }
+        .ant-radio-checked::after{
+            display: none;
+        }
+    }
+    .ant-radio-group.inside-radio-group{
+        padding: 10px 0px;
+        .ant-radio-wrapper{
+            border-radius: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 4px 24px !important;
+            .ant-radio-inner{
+                position: relative;
+                top: -5px;
+            }
+        }
+        .ant-radio-checked::after{
+            display: none;
+        }
+    }
+    .custom-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
