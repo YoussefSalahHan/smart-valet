@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-branches-list.component.scss']
 })
 export class UserBranchesListComponent {
+  openUserBranchFlag = false;
 
   constructor(private router : Router){
 
@@ -15,6 +16,35 @@ export class UserBranchesListComponent {
   addUserBranch(){
     this.router.navigate(['user-branches/add']);
   }
+
+  onRowClick(){
+    this.openUserBranchFlag = true;
+  }
+
+  handleCancel(){
+    this.openUserBranchFlag = false;
+  }
+
+  handleOk(){
+    this.openUserBranchFlag = false;
+  }
+
+  openUserBranch(){
+    this.openUserBranchFlag = true;
+  }
+
+  panels = [
+    {
+      active: true,
+      name: 'User Branch Info',
+      disabled: false
+    },
+    {
+      active: true,
+      disabled: false,
+      name: 'Branch Info'
+    }
+  ];
 
   listOfData = [
     {
