@@ -1,0 +1,60 @@
+.left-circle {
+      display: none;
+}
+
+
+
+@media (min-width:413px) and (max-width: 414px) {
+
+      .ant-table-thead>tr>th,
+      .ant-table-tbody>tr>td,
+      .ant-table tfoot>tr>th,
+      .ant-table tfoot>tr>td {
+            padding: 16px 16px !important;
+      }
+}
+
+
+@media (max-width: 767px) {
+      .page-container {
+            padding: 0 !important;
+      }
+
+      .table-header {
+            border-radius: 0pt 0pt 20pt 20pt !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+      }
+
+      .custom-table {
+            border-radius: 0;
+      }
+
+      .custom-table .table-header h2 {
+            padding-top: 25px !important;
+            color: #F0F0F0 !important;
+            opacity: 0.9 !important;
+            font-size: 18pt !important;
+            text-transform: uppercase;
+
+      }
+
+      .left-circle {
+            display: inline;
+            padding-right: 6pt !important;
+      }
+
+      .filters a {
+            opacity: 0.9 !important;
+            font-size: 18pt !important;
+      }
+
+      .table {
+            padding-top: 27pt;
+      }
+
+
+
+}

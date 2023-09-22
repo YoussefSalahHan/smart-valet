@@ -57,12 +57,14 @@
     .filters {
         display: flex;
         align-items: center;
+
         .ant-dropdown-link {
             color: #fff;
             font-size: 18px;
             padding-inline-end: 30px;
         }
-        .sort{
+
+        .sort {
             color: #fff;
             font-size: 18px;
             padding-inline-end: 30px;
@@ -199,6 +201,40 @@
         }
     }
 }
+
+
+
+@media (max-width:767px) {
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td,
+    .ant-table tfoot>tr>th,
+    .ant-table tfoot>tr>td {
+        padding: 8px 0px 0px 0px !important;
+    }
+
+    .custom-table .ant-table-content {
+        padding: 0px;
+    }
+
+    .custom-table .ant-table .ant-table-thead .ant-table-cell {
+        font-size: 9pt !important;
+        white-space: nowrap !important;
+        padding: 1px !important;
+    }
+
+    .custom-table .ant-table-pagination.ant-pagination {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .custom-table .ant-table .ant-table-row .ant-table-cell {
+        font-size: 12px;
+    }
+}
+
+
+
 
 .anticon.anticon-down {
     margin-inline-start: 5px;
@@ -385,21 +421,23 @@ nz-space {
 }
 
 .ant-collapse {
-    border:0px;
+    border: 0px;
+
     .ant-collapse-item {
-        .ant-collapse-header{
+        .ant-collapse-header {
             background: #fff;
             flex-flow: row-reverse;
             align-items: center;
             justify-content: start;
             padding-inline-start: 20px;
-            color:#2B50AA;
+            color: #2B50AA;
             font-size: 20px;
             padding-inline-start: 50px;
             padding-top: 25px;
             border-bottom-color: #c2cbe5;
             padding-bottom: 20px;
-            &:before{
+
+            &:before {
                 content: "";
                 width: 39px;
                 height: 4px;
@@ -410,7 +448,8 @@ nz-space {
                 inset-inline-start: 0px;
                 top: 36px;
             }
-            .ant-collapse-arrow{
+
+            .ant-collapse-arrow {
                 position: relative;
                 top: 0px;
                 right: 0px;
@@ -421,14 +460,17 @@ nz-space {
                 font-size: 18px;
             }
         }
-        &:last-child{
-            border:0px;
+
+        &:last-child {
+            border: 0px;
         }
     }
-    .ant-collapse-content-box{
+
+    .ant-collapse-content-box {
         padding: 0px;
     }
-    .ant-collapse-content{
-        border:0px;
+
+    .ant-collapse-content {
+        border: 0px;
     }
 }

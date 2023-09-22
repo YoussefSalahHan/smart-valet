@@ -1,42 +1,47 @@
-<div class="page-container">
-      <div class="custom-table">
-        <div class="table-header">
-            <h2>Customers</h2>
-            <div class="filters">
-                <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
-                    City
-                    <span nz-icon nzType="down"></span>
-                  </a>
-                  <nz-dropdown-menu #menu="nzDropdownMenu">
-                    <ul nz-menu>
-                      <li nz-menu-item>Cairo</li>
-                      <li nz-menu-item>Alex</li>
-                      <li nz-menu-item>Assuit</li>
-                    </ul>
-                  </nz-dropdown-menu>
-                            </div>
-        </div>
-        <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
-            <thead>
-              <tr>
-                <th>Customer No.</th>
-                <th>Customer Name</th>
-                <th>Phone No.</th>
-                <th>City</th>
-                <th>No. Orders</th>
-                <th>Income</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let data of basicTable.data">
-                <td>{{ data.customer_id }}</td>
-                <td>{{ data.customer_name }}</td>
-                <td>{{ data.phone }}</td>
-                <td>{{ data.city }}</td>
-                <td>{{ data.no_orders }}</td>
-                <td>{{ data.income }}</td>
-              </tr>
-            </tbody>
-          </nz-table>
+<div nz-row class="page-container">
+  <div nz-col nzXs="24" nzXs="24" nzMd="24" nzXl="24" class="custom-table">
+    <div class="table-header">
+      <h2>
+        <span class="left-circle" nz-icon nzType="left-circle" nzTheme="outline"></span>
+        <span>Customers</span>
+      </h2>
+      <div class="filters">
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          City
+          <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>Cairo</li>
+            <li nz-menu-item>Alex</li>
+            <li nz-menu-item>Assuit</li>
+          </ul>
+        </nz-dropdown-menu>
       </div>
+    </div>
+    <div class="table">
+      <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
+        <thead>
+          <tr>
+            <th>Customer No.</th>
+            <th>Customer Name</th>
+            <th>Phone No.</th>
+            <th>City</th>
+            <th>No. Orders</th>
+            <th>Income</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of basicTable.data">
+            <td>{{ data.customer_id }}</td>
+            <td>{{ data.customer_name }}</td>
+            <td>{{ data.phone }}</td>
+            <td>{{ data.city }}</td>
+            <td>{{ data.no_orders }}</td>
+            <td>{{ data.income }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+  </div>
 </div>

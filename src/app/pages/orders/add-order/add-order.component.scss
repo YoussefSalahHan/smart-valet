@@ -1,30 +1,120 @@
-.add-order-summary{
-    ul{
+.add-order-summary {
+    ul {
         padding: 0px;
         list-style-type: none;
         margin: 0px;
-        li{
+
+        li {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            p , span{
+
+            p,
+            span {
                 font-size: 16px;
                 margin: 10px 0px;
             }
-            span{
+
+            span {
                 font-weight: 300;
             }
-           
+
         }
-        .divider{
-            border: 1px solid #dcdcdc ;
-            border-top: 0px ;
+
+        .divider {
+            border: 1px solid #dcdcdc;
+            border-top: 0px;
         }
     }
 }
-.submit-button{
-    margin-top:45px;
+
+.submit-button {
+    margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+@media (min-width:768px) and (max-width:993px) {
+    .page-container {
+        padding: 0 !important;
+    }
+
+    .widget {
+        border-radius: 0 !important;
+        background-color: #F6F8FC;
+
+        .widget-header {
+            border-radius: 0pt 0pt 20pt 20pt !important;
+
+            .widget-title {
+                text-transform: uppercase;
+                opacity: .8;
+            }
+        }
+
+        .widget-body {
+            padding: 0 !important;
+            background-color: #F6F8FC !important;
+        }
+    }
+
+    .submit-button {
+        margin-bottom: 30px !important;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .page-container {
+        padding: 0 !important;
+    }
+
+    .widget {
+        border-radius: 0 !important;
+        background-color: #F6F8FC;
+
+        .widget-header {
+            border-radius: 0pt 0pt 20pt 20pt !important;
+
+            .widget-title {
+                text-transform: uppercase;
+                opacity: .8;
+            }
+        }
+
+        .widget-body {
+            padding: 0 !important;
+            background-color: #F6F8FC !important;
+        }
+    }
+
+    textarea.ant-input {
+        height: 105pt !important;
+    }
+
+    .ant-card {
+        border-radius: 0 !important;
+    }
+
+    nz-card.ant-card.gray.add-order-summary.ant-card-bordered {
+        border-radius: 0 0 20pt 20pt !important;
+    }
+
+    .add-order-summary h3 {
+        color: black !important;
+        padding-inline-start: 0 !important;
+    }
+
+    .add-order-summary h3::before {
+        display: none;
+    }
+
+    .submit-button {
+        margin-bottom: 30px !important;
+        margin: auto;
+    }
 }

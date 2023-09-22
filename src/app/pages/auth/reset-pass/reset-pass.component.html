@@ -1,68 +1,68 @@
 <div nz-row class="page-height">
-    <div nz-col [nzSpan]="17" [nzPush]="7" class="right-section">
-        <img class="bg" />
-        <div class="bg-inner">
-            <img class="inner" width="105px" height="105px" src="/assets/svg/login/vuesax-bold-car.svg" />
-        </div>
-        <h1>Smart Valet</h1>
+  <div nz-col [nzXl]="17" [nzXXl]="17" [nzLg]="17" [nzMd]="17" [nzSm]="24" [nzXs]="24" class="right-section">
+    <img class="bg" />
+    <div class="bg-inner">
+      <img class="inner" width="105px" height="105px" src="/assets/svg/login/vuesax-bold-car.svg" />
     </div>
-    <div nz-col [nzSpan]="7" [nzPull]="17" class="left-section">
-        <div nz-row nzJustify="start" nzAlign="middle">
-            <div nz-col>
-                <div class="title-logo">
-                    <img width="29px" height="29px" src="/assets/svg/login/vuesax-bold-car-white.svg" />
-                </div>
-            </div>
-            <div nz-col>
-                <h2>Smart Valet</h2>
-            </div>
+    <h1>Smart Valet</h1>
+  </div>
+  <div nz-col [nzXl]="7" [nzXXl]="7" [nzLg]="7" [nzMd]="7" [nzSm]="24" [nzXs]="24" class="left-section">
+    <div nz-row nzJustify="start" nzAlign="middle">
+      <div nz-col>
+        <div class="title-logo">
+          <img width="29px" height="29px" src="/assets/svg/login/vuesax-bold-car-white.svg" />
         </div>
-        <div nz-row nzJustify="start">
-            <h1>Create New Password?</h1>
-        </div>
-        <div nz-row nzJustify="start" class="hint">
-            <p>Please Fill In The Verification Code We Sent To You</p>
-        </div>
-        <div nz-row nzJustify="start">
-            <form nz-form class="login-form">
-                <nz-form-item>
-                    <nz-form-label [nzSm]="24">Verification Code</nz-form-label>
-                    <nz-form-control>
-                        <nz-input-group>
-                            <input type="text" nz-input placeholder="Verification Code" />
-                        </nz-input-group>
-                    </nz-form-control>
-                </nz-form-item>
-                <nz-form-item>
-                    <nz-form-label [nzSm]="24">New Password</nz-form-label>
-                    <nz-form-control>
-                        <nz-input-group [nzSuffix]="suffixTemplate1">
-                            <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
-                        </nz-input-group>
-                        <ng-template #suffixTemplate1>
-                            <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
-                                (click)="passwordVisible = !passwordVisible"></span>
-                        </ng-template>
-                    </nz-form-control>
-                </nz-form-item>
-                <nz-form-item>
-                    <nz-form-label [nzSm]="24">Confirm New Password</nz-form-label>
-                    <nz-form-control>
-                        <nz-input-group [nzSuffix]="suffixTemplate2">
-                            <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
-                        </nz-input-group>
-                        <ng-template #suffixTemplate2>
-                            <span nz-icon [nzType]="confirmPasswordVisible ? 'eye-invisible' : 'eye'"
-                                (click)="confirmPasswordVisible = !confirmPasswordVisible"></span>
-                        </ng-template>
-                    </nz-form-control>
-                </nz-form-item>
-                <div nz-row class="login-form-button ">
-                    <a [routerLink]="['/auth/reset-password']">
-                        <button nz-button [nzType]="'primary'">Send</button>
-                    </a>
-                </div>
-            </form>
-        </div>
+      </div>
+      <div nz-col>
+        <h2>Smart Valet</h2>
+      </div>
     </div>
+    <div nz-row nzJustify="start">
+      <h1>Create New Password?</h1>
+    </div>
+    <div nz-row nzJustify="start" class="hint">
+      <p>Please Fill In The Verification Code We Sent To You</p>
+    </div>
+    <div nz-row nzJustify="start">
+      <form nz-form class="login-form">
+        <nz-form-item>
+          <nz-form-label [nzSm]="24">Verification Code</nz-form-label>
+          <nz-form-control>
+            <nz-input-group>
+              <input type="text" nz-input placeholder="Verification Code" />
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="24">New Password</nz-form-label>
+          <nz-form-control>
+            <nz-input-group [nzSuffix]="suffixTemplate1">
+              <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+            </nz-input-group>
+            <ng-template #suffixTemplate1>
+              <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
+                (click)="passwordVisible = !passwordVisible"></span>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="24">Confirm New Password</nz-form-label>
+          <nz-form-control>
+            <nz-input-group [nzSuffix]="suffixTemplate2">
+              <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+            </nz-input-group>
+            <ng-template #suffixTemplate2>
+              <span nz-icon [nzType]="confirmPasswordVisible ? 'eye-invisible' : 'eye'"
+                (click)="confirmPasswordVisible = !confirmPasswordVisible"></span>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <div nz-row class="login-form-button">
+          <a [routerLink]="['/auth/reset-password']">
+            <button nz-button [nzType]="'primary'">Send</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

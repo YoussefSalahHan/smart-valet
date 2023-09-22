@@ -1,68 +1,68 @@
 <div nz-row class="page-height">
-    <div nz-col [nzSpan]="17" [nzPush]="7" class="right-section">
-        <img class="bg" />
-        <div class="bg-inner">
-            <img class="inner" width="105px" height="105px" src="/assets/svg/login/vuesax-bold-car.svg" />
-        </div>
-        <h1>Smart Valet</h1>
+  <div nz-col [nzLg]="17" [nzMd]="17" [nzSm]="24" [nzXs]="24" class="right-section">
+    <img class="bg" />
+    <div class="bg-inner">
+      <img class="inner" width="105px" height="105px" src="/assets/svg/login/vuesax-bold-car.svg" />
     </div>
-    <div nz-col [nzSpan]="7" [nzPull]="17" class="left-section">
-        <div nz-row nzJustify="start" nzAlign="middle">
-            <div nz-col>
-                <div class="title-logo">
-                    <img width="29px" height="29px" src="/assets/svg/login/vuesax-bold-car-white.svg" />
-                </div>
-            </div>
-            <div nz-col>
-                <h2>Smart Valet</h2>
-            </div>
+    <h1>Smart Valet</h1>
+  </div>
+  <div nz-col [nzLg]="7" [nzMd]="7" [nzSm]="24" [nzXs]="24" class="left-section">
+    <div nz-row nzJustify="start" nzAlign="middle">
+      <div nz-col>
+        <div class="title-logo">
+          <img width="29px" height="29px" src="/assets/svg/login/vuesax-bold-car-white.svg" />
         </div>
-        <div nz-row nzJustify="start">
-            <h1>Login</h1>
-        </div>
-        <div nz-row nzJustify="start" class="hint">
-            <p>Please Fill In Your Login Details Below</p>
-        </div>
-        <div nz-row nzJustify="start">
-            <form nz-form class="login-form">
-                <nz-form-item>
-                    <nz-form-label [nzSm]="24">Email Or Mobile Number</nz-form-label>
-                    <nz-form-control>
-                        <nz-input-group>
-                            <input type="text" nz-input placeholder="Email or Mobile Number" />
-                        </nz-input-group>
-                    </nz-form-control>
-                </nz-form-item>
-                <nz-form-item>
-                    <nz-form-label [nzSm]="24">Password</nz-form-label>
-                    <nz-form-control>
-                        <nz-input-group [nzSuffix]="suffixTemplate">
-                            <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
-                        </nz-input-group>
-                        <ng-template #suffixTemplate>
-                            <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
-                                (click)="passwordVisible = !passwordVisible"></span>
-                        </ng-template>
-                    </nz-form-control>
-                </nz-form-item>
-                <div nz-row nzJustify="space-between">
-                    <div nz-col>
-                        <a [routerLink]="['/auth/forget-password']" class="login-form-forgot">Forgot password?</a>
-                    </div>
-                    <div nz-col>
-                        <label nz-checkbox>
-                            <span>Remember me</span>
-                        </label>
-                    </div>
-                </div>
-                <div nz-row class="login-form-button ">
-                    <button nz-button [nzType]="'primary'">Log In</button>
-                </div>
-                <div nz-row class="no-account">
-                    Don’t Have An Account?
-                    <a [routerLink]="['/auth/register']"> Sign Up</a>
-                </div>
-            </form>
-        </div>
+      </div>
+      <div nz-col>
+        <h2>Smart Valet</h2>
+      </div>
     </div>
+    <div nz-row nzJustify="start">
+      <h1>Login</h1>
+    </div>
+    <div nz-row nzJustify="start" class="hint">
+      <p>Please Fill In Your Login Details Below</p>
+    </div>
+    <div nz-row nzJustify="start">
+      <form nz-form class="login-form">
+        <nz-form-item>
+          <nz-form-label [nzSm]="24">Email Or Mobile Number</nz-form-label>
+          <nz-form-control>
+            <nz-input-group>
+              <input type="text" nz-input placeholder="Email or Mobile Number" />
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="24">Password</nz-form-label>
+          <nz-form-control>
+            <nz-input-group [nzSuffix]="suffixTemplate">
+              <input [type]="passwordVisible ? 'text' : 'password'" nz-input placeholder="Password" />
+            </nz-input-group>
+            <ng-template #suffixTemplate>
+              <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
+                (click)="passwordVisible = !passwordVisible"></span>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <div nz-row nzJustify="space-between">
+          <div nz-col>
+            <a [routerLink]="['/auth/forget-password']" class="login-form-forgot">Forgot password?</a>
+          </div>
+          <div nz-col>
+            <label nz-checkbox>
+              <span>Remember me</span>
+            </label>
+          </div>
+        </div>
+        <div nz-row class="login-form-button">
+          <button nz-button [nzType]="'primary'">Log In</button>
+        </div>
+        <div nz-row class="no-account">
+          Don’t Have An Account?
+          <a [routerLink]="['/auth/register']"> Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

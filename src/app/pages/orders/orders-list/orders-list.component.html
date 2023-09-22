@@ -4,14 +4,14 @@
       <nz-card>
         <div class="status-card d-flex">
           <div class="numbers">
-            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick.svg" alt="" />
             <div>
               <span>New Orders</span>
               <label>2250</label>
             </div>
           </div>
           <div class="statics success">
-            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="" />
             <h5>+20% Inc</h5>
           </div>
         </div>
@@ -21,14 +21,14 @@
       <nz-card>
         <div class="status-card">
           <div class="numbers">
-            <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-note.svg" alt="" />
             <div>
               <span>Delivered Orders</span>
               <label>200</label>
             </div>
           </div>
           <div class="statics danger">
-            <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-import.svg" alt="" />
             <h5>+20% Inc</h5>
           </div>
         </div>
@@ -38,14 +38,14 @@
       <nz-card>
         <div class="status-card">
           <div class="numbers">
-            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-clipboard-tick (1).svg" alt="" />
             <div>
               <span>In Progress Orders</span>
               <label>500</label>
             </div>
           </div>
           <div class="statics success">
-            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="">
+            <img src="../../../../assets/svg/vuesax-bold-export.svg" alt="" />
             <h5>+20% Inc</h5>
           </div>
         </div>
@@ -70,7 +70,6 @@
           </ul>
         </nz-dropdown-menu>
 
-
         <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
           Status
           <span nz-icon nzType="down"></span>
@@ -83,8 +82,9 @@
           </ul>
         </nz-dropdown-menu>
 
-        <button nz-button nzType="default" nzSize="large" nzShape="round" (click)="addOrder()"> <span nz-icon nzType="plus-circle"></span>
-          Add Order </button>
+        <button nz-button nzType="default" nzSize="large" nzShape="round" (click)="addOrder()">
+          <span nz-icon nzType="plus-circle"></span> Add Order
+        </button>
       </div>
     </div>
     <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
@@ -110,10 +110,12 @@
           <td>{{ data.checkout }}</td>
           <td>{{ data.price }}</td>
           <td>{{ data.payment }}</td>
-          <td><nz-tag nzColor="success">{{ data.status }}</nz-tag></td>
           <td>
-            <a [routerLink]="['/orders/view/'+data.order_id]">
-              <img src="/assets/svg/orders/vuesax-bold-eye.svg" alt="">
+            <nz-tag nzColor="success">{{ data.status }}</nz-tag>
+          </td>
+          <td>
+            <a [routerLink]="['/orders/view/' + data.order_id]">
+              <img src="/assets/svg/orders/vuesax-bold-eye.svg" alt="" />
             </a>
           </td>
         </tr>
@@ -122,10 +124,10 @@
   </div>
 </div>
 
-
-<nz-modal [(nzVisible)]="sortPopupFlag" nzTitle="SORT BY" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" nzClassName="sort-by-modal">
+<nz-modal [(nzVisible)]="sortPopupFlag" nzTitle="SORT BY" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()"
+  nzClassName="sort-by-modal">
   <div *nzModalFooter class="custom-footer">
-      <button nz-button nzType="primary">The Most Recent</button>
-      <button nz-button nzType="default">The Oldest</button>
+    <button nz-button nzType="primary">The Most Recent</button>
+    <button nz-button nzType="default">The Oldest</button>
   </div>
 </nz-modal>

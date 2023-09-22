@@ -1,5 +1,7 @@
 .page-height {
     height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .right-section {
@@ -142,4 +144,63 @@
 .ant-input-affix-wrapper-focused {
     border: none;
     box-shadow: none;
+}
+
+
+@media (min-width:768px) and (max-width:1200px) {
+    .left-section {
+        padding-inline-start: 20px !important;
+
+        h2 {
+            white-space: nowrap !important;
+        }
+
+        h1 {
+            padding-top: 0 !important;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .right-section {
+        height: 232pt !important;
+
+        h1 {
+            font-size: 30pt !important;
+            padding-top: 25pt;
+        }
+    }
+
+    .bg-inner {
+        width: 103pt !important;
+        height: 103pt !important;
+        position: relative;
+
+        .inner {
+            width: 40.01pt !important;
+            height: 40.01pt;
+            position: absolute;
+            right: 20% !important;
+            top: 50% !important;
+            transform: translate(0%, -50%) !important;
+        }
+    }
+
+    .left-section {
+        padding-top: 0pt;
+
+        .ant-row-middle {
+            display: none;
+        }
+
+        .login-form .login-form-button,
+        .no-account {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .ant-form {
+        width: 100%;
+    }
 }
