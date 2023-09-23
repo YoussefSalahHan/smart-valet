@@ -1,86 +1,136 @@
 <div class="page-container">
-    
+
     <div class="widget">
         <div class="widget-header">
             <p class="widget-title">
-                Notification
+                <span class="left-circle" nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Notifications
             </p>
-            <div class="filters">                
-                <button nz-button nzType="default" nzSize="large" (click)="addNewNotification()" nzShape="round"> <span nz-icon nzType="plus-circle"></span> Add New Notification </button>
+            <div class="filters">
+                <button nz-button nzType="default" nzSize="large" (click)="addNewNotification()" nzShape="round"> <span
+                        nz-icon nzType="plus-circle"></span> Add New Notification </button>
             </div>
         </div>
         <div class="widget-body">
             <div nz-row [nzGutter]="40" class="cards">
                 <ul nz-col [nzSpan]="24" class="notification-center">
                     <li>
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Now</span>
-                        <span class="title">AHMED : </span>
-                        <span class="desc">Has Received A New Order #4456</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Now</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">AHMED : </span>
+                            <span class="desc">Has Received A New Order #4456</span>
+                        </div>
                     </li>
                     <li>
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Sice Hour</span>
-                        <span class="title">OIC : </span>
-                        <span class="desc">Has Received A New Order #4456</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Sice Hour</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">OIC : </span>
+                            <span class="desc">Has Received A New Order #4456</span>
+                        </div>
                     </li>
                     <li>
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Sice 2 Hour</span>
-                        <span class="title">AHMED : </span>
-                        <span class="desc">Has Received A New Order #4456</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Sice 2 Hour</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">AHMED : </span>
+                            <span class="desc">Has Received A New Order #4456</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                     <li>
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Sice 2 Hour</span>
-                        <span class="title">AHMED : </span>
-                        <span class="desc">Has Received A New Order #4456</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Sice 2 Hour</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">AHMED : </span>
+                            <span class="desc">Has Received A New Order #4456</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                     <li>
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Sice 2 Hour</span>
-                        <span class="title">AHMED : </span>
-                        <span class="desc">Has Received A New Order #4456</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Sice 2 Hour</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">AHMED : </span>
+                            <span class="desc">Has Received A New Order #4456</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                     <li class="read">
-                        <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
-                        <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
-                        <span class="title">UTQ : </span>
-                        <span class="desc">Has Delivered Their Order #34256</span>
+                        <div class="clock-icon-for-mobile">
+                            <span nz-icon nzType="clock-circle" nzTheme="outline" class="icon"></span>
+                            <span class="date">Thursday, 9 Aug 2022, 6:05 PM</span>
+                        </div>
+                        <div class="received-details-for-mobile">
+                            <span class="title">UTQ : </span>
+                            <span class="desc">Has Delivered Their Order #34256</span>
+                        </div>
                     </li>
                 </ul>
+                <button nz-button nzType="default" nzSize="large" (click)="addNewNotification()" nzShape="round"> <span
+                        class="plus-circle-img-for-mobile">
+                        <img src="../../../../assets/svg/add-circle.svg" alt="">
+                    </span> Add New Notification </button>
                 <nz-pagination [nzPageIndex]="1" [nzTotal]="50" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
-            </div>  
+            </div>
         </div>
     </div>
 </div>
@@ -98,7 +148,7 @@
         </div>
         <div class="input-widget" nz-col [nzSpan]="24">
             <label>Text</label>
-            <textarea rows="5" nz-input  placeholder="Write your notification here"></textarea>
+            <textarea rows="5" nz-input placeholder="Write your notification here"></textarea>
         </div>
     </ng-container>
     <div *nzModalFooter class="custom-footer">

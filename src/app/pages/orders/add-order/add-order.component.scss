@@ -60,6 +60,22 @@
             background-color: #F6F8FC !important;
         }
     }
+    .add-order-summary{
+
+        h3{
+            color: black !important;
+            padding-inline-start: 0 !important;
+        }
+        ul{
+            padding: 10pt;
+            background-color: #FFFFFF;
+            border-radius: 20pt;
+        }
+    }
+
+    .add-order-summary h3::before {
+        display: none;
+    }
 
     .submit-button {
         margin-bottom: 30px !important;
@@ -104,9 +120,17 @@
         border-radius: 0 0 20pt 20pt !important;
     }
 
-    .add-order-summary h3 {
-        color: black !important;
-        padding-inline-start: 0 !important;
+    .add-order-summary{
+
+        h3{
+            color: black !important;
+            padding-inline-start: 0 !important;
+        }
+        ul{
+            padding: 10pt;
+            background-color: #FFFFFF;
+            border-radius: 20pt;
+        }
     }
 
     .add-order-summary h3::before {

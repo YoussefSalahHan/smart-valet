@@ -1,0 +1,5 @@
+<svg id="vuesax_bold_eye" data-name="vuesax/bold/eye" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path id="Vector" d="M12.833,3.813A7.466,7.466,0,0,0,6.667,0,6.455,6.455,0,0,0,3.273.993,8.9,8.9,0,0,0,.5,3.813a3.847,3.847,0,0,0,0,3.793A7.451,7.451,0,0,0,6.667,11.42a6.455,6.455,0,0,0,3.393-.993,8.9,8.9,0,0,0,2.773-2.82A3.847,3.847,0,0,0,12.833,3.813ZM6.667,8.407A2.693,2.693,0,1,1,9.36,5.713,2.69,2.69,0,0,1,6.667,8.407Z" transform="translate(1.333 2.287)" fill="#2b50aa"/>
+  <path id="Vector-2" data-name="Vector" d="M1.9,0A1.9,1.9,0,1,0,3.807,1.907,1.9,1.9,0,0,0,1.9,0Z" transform="translate(6.1 6.093)" fill="#2b50aa"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H16V16H0Z" transform="translate(16 16) rotate(180)" fill="none" opacity="0"/>
+</svg>

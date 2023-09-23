@@ -2,7 +2,9 @@
       display: none;
 }
 
-
+.for-mobile{ 
+      display: none;
+}
 
 @media (min-width:413px) and (max-width: 414px) {
 
@@ -12,10 +14,17 @@
       .ant-table tfoot>tr>td {
             padding: 16px 16px !important;
       }
+
+      .no-in-responsive{
+            display: none;
+      }
 }
 
 
 @media (max-width: 767px) {
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+            padding: 16px 11px;
+      }
       .page-container {
             padding: 0 !important;
       }
@@ -47,14 +56,41 @@
       }
 
       .filters a {
-            opacity: 0.9 !important;
-            font-size: 18pt !important;
+           display: none;
       }
 
       .table {
             padding-top: 27pt;
       }
 
+      .no-in-responsive{
+            display: none;
+      }
 
+      .for-mobile{ 
+            display: block;
+      }
 
+      .icon-for-mobile {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+        }
+
+        th{ 
+            text-align: center !important;
+        }
+
+        .search-bar { 
+              padding: 20pt;
+
+        }
+        .search-bar input.ant-input.ng-star-inserted{
+            border-radius: 20pt;
+
+        }
+        .search-bar input.ant-input.ng-star-inserted::placeholder{
+            text-align: start;
+}
 }

@@ -19,29 +19,46 @@
         </nz-dropdown-menu>
       </div>
     </div>
+    <div class="search-bar">
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input placeholder="search" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <span nz-icon nzType="search"></span>
+      </ng-template>
+    </div>
     <div class="table">
       <nz-table #basicTable [nzData]="listOfData" nzShowPagination nzShowSizeChanger>
         <thead>
           <tr>
             <th>Customer No.</th>
             <th>Customer Name</th>
-            <th>Phone No.</th>
-            <th>City</th>
+            <th class="no-in-responsive">Phone No.</th>
+            <th class="no-in-responsive">City</th>
             <th>No. Orders</th>
-            <th>Income</th>
+            <th class="no-in-responsive">Income</th>
+            <th class="no-in-responsive"></th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let data of basicTable.data">
             <td>{{ data.customer_id }}</td>
             <td>{{ data.customer_name }}</td>
-            <td>{{ data.phone }}</td>
-            <td>{{ data.city }}</td>
-            <td>{{ data.no_orders }}</td>
-            <td>{{ data.income }}</td>
+            <td class="no-in-responsive">{{ data.phone }}</td>
+            <td class="no-in-responsive">{{ data.city }}</td>
+            <td>
+              <div class="icon-for-mobile">
+                <span>
+                  {{ data.no_orders }}
+                </span>
+                <span><img src="assets/svg/vuesax-bold-eye.svg" alt="" /></span>
+              </div>
+            </td>
+            <td class="no-in-responsive">{{ data.income }}</td>
           </tr>
         </tbody>
       </nz-table>
     </div>
+      
   </div>
 </div>

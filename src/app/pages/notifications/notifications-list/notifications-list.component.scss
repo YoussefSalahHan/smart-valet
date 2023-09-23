@@ -170,4 +170,99 @@
     justify-content: center;
 }
 
+.widget .widget-body .ant-btn-round.ant-btn-lg{
+    display: none;
+}
 
+@media (max-width: 767px) {
+    .page-container {
+        padding: 0 !important;
+    }
+
+    .ant-row .cards {
+        background-color: #F6F8FC !important;
+    }
+
+    .widget {
+        border-radius: 0 !important;
+        background-color: #F6F8FC;
+
+        .widget-header {
+            border-radius: 0pt 0pt 20pt 20pt !important;
+
+            .widget-title {
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                .left-circle{
+                    padding-right: 12pt;
+                }
+            }
+
+            .ant-btn.ant-btn-round.ant-btn-lg{
+                display: none;
+            }
+        }
+
+        .widget-body {
+            padding: 0 !important;
+            background-color: #F6F8FC !important;
+        }
+    }
+
+    .notification-center{
+       padding:  16pt 20pt 323pt  !important;
+
+        li{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: start !important;
+            align-items: start !important;
+            height: 66pt;
+            padding: 11pt 13pt 11pt 16pt !important;
+            gap: 4pt;
+
+            .read{
+                background-color: #FFFFFF;
+            }
+
+            .clock-icon-for-mobile {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+            }
+
+            .received-details-for-mobile{
+                text-align: left;
+            }
+
+            .date:after{
+                display: none;
+            }
+        }
+    }
+
+    
+
+    .widget .widget-body .ant-btn-round.ant-btn-lg{
+        color: #fff;
+        font-size: 15pt !important;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        background:#2B50AA;
+        margin: 0 auto 34pt;
+        width: 216pt;
+        height: 48pt;
+        img{
+            width: 24pt !important;
+            height: 24pt !important;
+            margin-right: 10pt;
+        }
+    }
+    
+
+    .ant-pagination{
+        display: none;
+    }
+}

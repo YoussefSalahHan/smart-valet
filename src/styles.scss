@@ -206,19 +206,12 @@
 
 @media (max-width:767px) {
 
-    .ant-table-thead>tr>th,
-    .ant-table-tbody>tr>td,
-    .ant-table tfoot>tr>th,
-    .ant-table tfoot>tr>td {
-        padding: 8px 0px 0px 0px !important;
-    }
-
     .custom-table .ant-table-content {
         padding: 0px;
     }
 
     .custom-table .ant-table .ant-table-thead .ant-table-cell {
-        font-size: 9pt !important;
+        font-size: 13pt !important;
         white-space: nowrap !important;
         padding: 1px !important;
     }
@@ -229,7 +222,7 @@
     }
 
     .custom-table .ant-table .ant-table-row .ant-table-cell {
-        font-size: 12px;
+        font-size: 13pt;
     }
 }
 
@@ -471,6 +464,6 @@ nz-space {
     }
 
     .ant-collapse-content {
-        border: 0px;
-    }
+        border: 0px;
+}
 }

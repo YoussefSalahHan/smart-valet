@@ -95,3 +95,56 @@ nz-card {
         padding: 0px;
     }
 }
+
+@media (max-width:767px){
+    .page-container{
+        padding: 20pt;
+        background-color: #F6F8FC;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nz-card{
+        padding: 0 !important; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column !important;
+        width: 106pt !important;
+        height: 159pt !important;
+    }
+
+    .status-card {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0 !important;
+
+        .numbers{
+           display: flex;
+           flex-direction: column;
+       
+           img{
+           width: 40pt;
+           height: 40pt;
+         }
+       
+         div {
+           label{
+               font-size: 14pt;
+               text-align: center;
+             }
+             span{
+               font-size: 12pt;
+               white-space: nowrap;
+             }
+         }
+       
+       
+        }
+   }
+
+   
+    
+}
