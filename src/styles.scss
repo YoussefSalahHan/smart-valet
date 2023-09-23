@@ -243,7 +243,9 @@
     }
 
     .custom-table .ant-table .ant-table-row .ant-table-cell {
-        font-size: 12px;
+        font-size: 13pt;
+        padding-right: 4px !important;
+        padding-left: 4px !important;
     }
 }
 
