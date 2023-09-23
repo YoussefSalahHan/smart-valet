@@ -1,3 +1,10 @@
+.widget-notification{
+    background: #fff;
+    padding: 40px;
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+}
 .notification-center{
     padding: 0px;
     margin: 0px;
@@ -6,14 +13,13 @@
     flex-direction: column;
     align-items: start;
     li{
-        height: 55px;
         background: #EEEEFD;
         border-radius: 20px;
         margin-bottom: 16px;
         display: flex;
         align-items: center;
         justify-content: start;
-        padding: 0px 30px;
+        padding: 15px 30px !important;
         width: 100%;
         padding-top: 3px;
         font-size: 16px;
@@ -21,6 +27,10 @@
             color: #2B50AA;
             margin-inline-end: 10px;
             padding-bottom: 5px;
+            @media (max-width:767px) {
+                margin-inline-end: 5px;
+                padding-top: 1px;
+            }
         }
         .desc{
             font-weight: 200;
@@ -35,6 +45,9 @@
             position: relative;
             margin-inline-end: 20px;
             color: #2B50AA;
+            @media (max-width:767px) {
+                font-size: 12px;
+            }
 
 
             &:after{
@@ -195,7 +208,7 @@
                 color: #FFFFFF;
 
                 .left-circle{
-                    padding-right: 12pt;
+                    padding-right: 5pt;
                 }
             }
 
@@ -211,16 +224,13 @@
     }
 
     .notification-center{
-       padding:  16pt 20pt 323pt  !important;
-
         li{
             display: flex;
             flex-direction: column-reverse;
             justify-content: start !important;
             align-items: start !important;
-            height: 66pt;
-            padding: 11pt 13pt 11pt 16pt !important;
-            gap: 4pt;
+            padding: 11px 16px !important;
+            font-size: 14px;
 
             .read{
                 background-color: #FFFFFF;
@@ -264,5 +274,24 @@
 
     .ant-pagination{
         display: none;
+    }
+}
+.mobile-button{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    button{
+        width: fit-content;
+        height: 40px !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 0px 20px !important; 
+        padding-top: 3px !important;
+        img{
+            padding-inline-end: 10px;
+            position: relative;
+            top: -2px;
+        }
     }
 }

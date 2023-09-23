@@ -9,6 +9,9 @@
 .page-container {
     padding: 40px 70px;
     height: 100%;
+    @media (max-width:768px) {
+        padding: 0px;
+    }
 }
 
 
@@ -83,11 +86,22 @@
         align-items: center;
         height: 62px;
         padding: 0px 40px;
+        @media (max-width: 767px) {
+            padding: 10px 20px;
+            height: fit-content;
+        }
+
 
         h2 {
             color: #fff;
             margin-bottom: 0px;
             padding-top: 4px;
+            @media (max-width: 767px) {
+                opacity: .8;
+                text-transform: uppercase;
+                font-size: 18px !important;
+
+            }
         }
 
         .ant-btn.ant-btn-round.ant-btn-lg {
@@ -206,12 +220,19 @@
 
 @media (max-width:767px) {
 
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td,
+    .ant-table tfoot>tr>th,
+    .ant-table tfoot>tr>td {
+        padding: 8px 0px 0px 0px !important;
+    }
+
     .custom-table .ant-table-content {
         padding: 0px;
     }
 
     .custom-table .ant-table .ant-table-thead .ant-table-cell {
-        font-size: 13pt !important;
+        font-size: 9pt !important;
         white-space: nowrap !important;
         padding: 1px !important;
     }
@@ -222,9 +243,7 @@
     }
 
     .custom-table .ant-table .ant-table-row .ant-table-cell {
-        font-size: 13pt;
-        padding-right: 4 !important;
-        padding-left: 4 !important;
+        font-size: 12px;
     }
 }
 
@@ -240,7 +259,10 @@
 .widget {
     overflow: hidden;
     border-radius: 20px;
-
+    @media (max-width:768px) {
+        border-radius: 0 !important;
+        background-color: #F6F8FC;
+    }    
     .widget-header {
         background: #2B50AA;
         color: #fff;
@@ -249,6 +271,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 40px;
+        @media (max-width:768px) {
+            padding: 11px 20px !important;
+            height: fit-content;
+        }
+
 
         .ant-btn.ant-btn-round.ant-btn-lg {
             background: #fff;
@@ -261,6 +288,12 @@
             margin: 0px;
             font-size: 20px;
             color: #fff;
+            @media (max-width:768px) {
+                text-transform: uppercase;
+                opacity: .8;
+                font-size: 18px;
+            }
+            
         }
 
         .widget-icon {
@@ -271,6 +304,10 @@
     .widget-body {
         background: #fff;
         padding: 40px;
+        @media (max-width:768px) {
+            padding: 0 !important;
+            background-color: #F6F8FC !important;
+        }
     }
 }
 
@@ -466,6 +503,21 @@ nz-space {
     }
 
     .ant-collapse-content {
-        border: 0px;
+        border: 0px;
+    }
 }
+
+
+.desktop{
+    display: flex  !important;
+    @media screen and (max-width: 768px) {
+      display: none  !important;
+    }
+}
+  
+.mobile{
+    display: none  !important;
+    @media screen and (max-width: 768px) {
+      display: flex  !important;
+    }
 }

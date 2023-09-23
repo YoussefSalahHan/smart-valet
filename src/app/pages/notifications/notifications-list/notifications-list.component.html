@@ -1,5 +1,4 @@
 <div class="page-container">
-
     <div class="widget">
         <div class="widget-header">
             <p class="widget-title">
@@ -11,7 +10,7 @@
                         nz-icon nzType="plus-circle"></span> Add New Notification </button>
             </div>
         </div>
-        <div class="widget-body">
+        <div class="widget-notification">
             <div nz-row [nzGutter]="40" class="cards">
                 <ul nz-col [nzSpan]="24" class="notification-center">
                     <li>
@@ -125,10 +124,11 @@
                         </div>
                     </li>
                 </ul>
-                <button nz-button nzType="default" nzSize="large" (click)="addNewNotification()" nzShape="round"> <span
-                        class="plus-circle-img-for-mobile">
+                <div class="mobile mobile-button">
+                    <button nz-button nzType="primary" nzSize="large" (click)="addNewNotification()" nzShape="round"> <span>
                         <img src="../../../../assets/svg/add-circle.svg" alt="">
                     </span> Add New Notification </button>
+                </div>
                 <nz-pagination [nzPageIndex]="1" [nzTotal]="50" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
             </div>
         </div>
