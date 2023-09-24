@@ -56,6 +56,10 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+    }
 
     .filters {
         display: flex;
@@ -89,6 +93,8 @@
         @media (max-width: 767px) {
             padding: 10px 20px;
             height: fit-content;
+            border-bottom-right-radius: 20px !important;
+            border-bottom-left-radius: 20px !important;
         }
 
 

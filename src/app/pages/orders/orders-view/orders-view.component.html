@@ -18,7 +18,7 @@
         </div>
         <div class="content">
             <nz-card>
-                <div class="custom-card">
+                <div class="custom-card desktop">
                     <h2 class="custom-title">Status.</h2>
                     <nz-steps>
                         <nz-step class="step1" nzTitle="Pending" nzDescription="At 03:05 Pm"
@@ -32,97 +32,99 @@
                         <ng-template #iconTemplate><span class="dot"></span></ng-template>
                     </nz-steps>
                 </div>
-                <div nz-row class="details">
-                    <div nz-col nzSpan="16" class="custom-card">
-                        <nz-collapse nzExpandIconPosition="right">
-                            <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <p>Check In</p>
-                                            <h3>03:00 Pm</h3>
-                                        </li>
-                                        <li>
-                                            <p>Check Out</p>
-                                            <h3>07:00 Pm</h3>
-                                        </li>
-                                        <li>
-                                            <p>Waiting Hours</p>
-                                            <h3>04:00</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nz-collapse-panel>
-                        </nz-collapse>
-                        <nz-collapse nzExpandIconPosition="right">
-                            <nz-collapse-panel [nzHeader]="'Note'" [nzActive]="true">
-                                <div class="note">
-                                    <p>Lorem Ipsum. "Neque Porro Quisquam Est Qucxsi Ccvcvcx Dolorem Red Flag</p>
-                                </div>
-                            </nz-collapse-panel>
-                        </nz-collapse>
-                        <nz-collapse nzExpandIconPosition="right">
-                            <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <p>Car Brand</p>
-                                            <h3>BMW</h3>
-                                        </li>
-                                        <li>
-                                            <p>Car Modal</p>
-                                            <h3>M5</h3>
-                                        </li>
-                                        <li>
-                                            <p>Car Plate</p>
-                                            <h3>P 325 CC</h3>
-                                        </li>
-                                        <li>
-                                            <p>Car Location</p>
-                                            <h3>Aad Bin Obada, Al-S ,..</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nz-collapse-panel>
-                        </nz-collapse>
-                        <nz-collapse nzExpandIconPosition="right">
-                            <nz-collapse-panel [nzHeader]="'Customer Info'" [nzActive]="true">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <p>Customer Name</p>
-                                            <h3>Heba Hasan</h3>
-                                        </li>
-                                        <li>
-                                            <p>Customer Phone Number</p>
-                                            <h3>+966 282 2148 524</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nz-collapse-panel>
-                        </nz-collapse>
-                        <nz-collapse nzExpandIconPosition="right">
-                            <nz-collapse-panel [nzHeader]="'Company Info'" [nzActive]="true">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <p>Company / Branch Name</p>
-                                            <h3>Ahmed / Ahmed 2</h3>
-                                        </li>
-                                        <li>
-                                            <p>Branch Phone</p>
-                                            <h3>+966 242 2148 999</h3>
-                                        </li>
-                                        <li>
-                                            <p>Branch Location</p>
-                                            <h3>Aad Bin Obada, Al-S ,..</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nz-collapse-panel>
-                        </nz-collapse>
+                <div nz-row class="details" [nzGutter]="40">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <div class="collapese">
+                            <nz-collapse nzExpandIconPosition="right">
+                                <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Check In</p>
+                                                <h3>03:00 Pm</h3>
+                                            </li>
+                                            <li>
+                                                <p>Check Out</p>
+                                                <h3>07:00 Pm</h3>
+                                            </li>
+                                            <li>
+                                                <p>Waiting Hours</p>
+                                                <h3>04:00</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nz-collapse-panel>
+                            </nz-collapse>
+                            <nz-collapse nzExpandIconPosition="right">
+                                <nz-collapse-panel [nzHeader]="'Note'" [nzActive]="true">
+                                    <div class="note">
+                                        <p>Lorem Ipsum. "Neque Porro Quisquam Est Qucxsi Ccvcvcx Dolorem Red Flag</p>
+                                    </div>
+                                </nz-collapse-panel>
+                            </nz-collapse>
+                            <nz-collapse nzExpandIconPosition="right">
+                                <nz-collapse-panel [nzHeader]="'Order Info'" [nzActive]="true">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Car Brand</p>
+                                                <h3>BMW</h3>
+                                            </li>
+                                            <li>
+                                                <p>Car Modal</p>
+                                                <h3>M5</h3>
+                                            </li>
+                                            <li>
+                                                <p>Car Plate</p>
+                                                <h3>P 325 CC</h3>
+                                            </li>
+                                            <li>
+                                                <p>Car Location</p>
+                                                <h3>Aad Bin Obada, Al-S ,..</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nz-collapse-panel>
+                            </nz-collapse>
+                            <nz-collapse nzExpandIconPosition="right">
+                                <nz-collapse-panel [nzHeader]="'Customer Info'" [nzActive]="true">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Customer Name</p>
+                                                <h3>Heba Hasan</h3>
+                                            </li>
+                                            <li>
+                                                <p>Customer Phone Number</p>
+                                                <h3>+966 282 2148 524</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nz-collapse-panel>
+                            </nz-collapse>
+                            <nz-collapse nzExpandIconPosition="right">
+                                <nz-collapse-panel [nzHeader]="'Company Info'" [nzActive]="true">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <p>Company / Branch Name</p>
+                                                <h3>Ahmed / Ahmed 2</h3>
+                                            </li>
+                                            <li>
+                                                <p>Branch Phone</p>
+                                                <h3>+966 242 2148 999</h3>
+                                            </li>
+                                            <li>
+                                                <p>Branch Location</p>
+                                                <h3>Aad Bin Obada, Al-S ,..</h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nz-collapse-panel>
+                            </nz-collapse>
+                        </div>
                     </div>
-                    <div nz-col nzSpan="7" nzOffset="1">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <nz-space nzDirection="vertical">
                             <div *nzSpaceItem class="custom-card payment-info">
                                 <div>

@@ -3,6 +3,14 @@
     span{
         padding-inline-end: 5px !important;
     }
+    @media (max-width:768px) {
+        margin-bottom: 5px;
+    }
+}
+.custom-table .table-header{
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
 }
 .filters {
     ::ng-deep .ant-select-selector  {
@@ -136,6 +144,16 @@
         background: #FBFBFE;
         border-radius: 20px;
         padding: 24px;
+        flex-direction: column;
+    }
+}
+.collapese{
+    padding: 0px 24px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    @media (max-width:768px) {
+        background-color: transparent;
+        padding: 0px;
     }
 }
 
@@ -159,9 +177,47 @@
     padding-inline-start: 9px;
 }
 
-.ant-collapse{
+::ng-deep .ant-collapse{
+    @media (max-width:768px) {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+    }
+    .ant-collapse-header{
+        @media (max-width:768px) {
+            padding: 5px 35px !important;
+        }
+        &:before{
+            @media (max-width:768px) {
+                top: 16px !important;
+            }        
+        }
+    }
     .ant-collapse-item {
         border-bottom: 1px solid #d9d9d9 !important;
+        @media (max-width:768px) {
+            border:0px !important;
+        }
+    }
+    .ant-collapse-content-box{
+        ul{
+            @media (max-width:768px) {
+                flex-direction: column !important;
+                padding-bottom: 0px !important;
+            }
+            li{
+                @media (max-width:768px) {
+                    width: 100%;
+                    display: flex;
+                    margin: 0px !important;
+                    border: 0px !important;
+                    margin-bottom: 5px !important;
+                }
+                
+            }
+        }
+        
     }
     &:last-child{
         .ant-collapse-item {
@@ -172,14 +228,22 @@
 
 .details {
     padding-top: 20px;
+    @media (max-width:768px) {
+        padding-top: 0px !important;
+    }
     .custom-card{
         padding: 0px 24px !important;
     }
     .payment-info{
         padding: 24px !important;
+        p{
+            margin: 0px;
+        }
     }
     .payment-info2{
         padding: 20px 0px !important;
+        margin-top: 15px !important;
+        
         nz-tag {
             background: #15B62A;
             color: #fff;
@@ -187,6 +251,9 @@
             padding-top: 2px;
         }
         div{
+            @media (max-width:768px) {
+                padding: 0px !important;
+            }
             p {
                 margin: 5px 0px;
                 font-size: 14px;
@@ -267,7 +334,6 @@
 .payment-info {
     .total-price{
         padding-top: 10px !important;
-        margin-top: 10px;
         border-top: 1px solid #d9d9d9 !important;
     }
     .ant-row {
