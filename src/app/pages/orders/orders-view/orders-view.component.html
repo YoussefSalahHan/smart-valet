@@ -1,17 +1,15 @@
 <div class="page-container">
     <div class="custom-table">
         <div class="table-header">
-            <a [routerLink]="['/orders']">
-                <h2>
-                    <span nz-icon nzType="left-circle" nzTheme="outline"></span>
-                    Order No.#1000 Details
-                </h2>
-            </a>
+            <h2>
+                <span nz-icon nzType="left-circle" nzTheme="outline"></span>
+                Order No.#1000 Details
+            </h2>
             <div class="filters">
-                <span class="status">
-                    <label>Status: </label>
-                    <span>Car Parked By Employee</span>
-                </span>
+                <nz-select ngModel="lucy" class="status" nzPlaceHolder="Car Parked By Employee">
+                    <nz-option nzValue="jack" nzLabel="Car Parked By Employee"></nz-option>
+                    <nz-option nzValue="lucy" nzLabel="Car Requested By Customer"></nz-option>
+                  </nz-select>
                 <span class="time">
                     <span nz-icon nzType="clock-circle" nzTheme="outline"></span>
                     <span> 2 Dec 2023</span>
@@ -21,8 +19,7 @@
         <div class="content">
             <nz-card>
                 <div class="custom-card">
-                    <hr />
-                    <h2>Status.</h2>
+                    <h2 class="custom-title">Status.</h2>
                     <nz-steps>
                         <nz-step class="step1" nzTitle="Pending" nzDescription="At 03:05 Pm"
                             [nzIcon]="iconTemplate"></nz-step>
@@ -127,10 +124,9 @@
                     </div>
                     <div nz-col nzSpan="7" nzOffset="1">
                         <nz-space nzDirection="vertical">
-                            <div *nzSpaceItem class="custom-card">
-                                <div class="payment-info">
-                                    <hr />
-                                    <h2>Payments Info .</h2>
+                            <div *nzSpaceItem class="custom-card payment-info">
+                                <div>
+                                    <h2 class="custom-title">Payments Info .</h2>
                                     <div nz-row nzJustify="space-between">
                                         <div nz-col>
                                             <p>Price</p>
@@ -143,7 +139,7 @@
                                         </div>
                                         <div nz-col>10 SAR</div>
                                     </div>
-                                    <div nz-row nzJustify="space-between">
+                                    <div nz-row nzJustify="space-between" class="total-price">
                                         <div nz-col>
                                             <p>Total Price</p>
                                         </div>
@@ -153,30 +149,22 @@
                             </div>
 
                             <div *nzSpaceItem class="custom-card">
-                                <div class="payment-info">
+                                <div class="payment-info payment-info2">
                                     <div nz-row nzJustify="space-between">
-                                        <div nz-col>
-                                            <p>Payment Method</p>
-                                        </div>
-                                        <div nz-col>My Wallet</div>
+                                        <p>Payment Method</p>
+                                        <p>My Wallet</p>
                                     </div>
                                     <div nz-row nzJustify="space-between">
-                                        <div nz-col>
-                                            <p>Date</p>
-                                        </div>
-                                        <div nz-col>2 Dec 2023 | 10 : 00 Am</div>
+                                        <p>Date</p>
+                                        <p>2 Dec 2023 | 10 : 00 Am</p>
                                     </div>
                                     <div nz-row nzJustify="space-between">
-                                        <div nz-col>
-                                            <p>Transaction ID</p>
-                                        </div>
-                                        <div nz-col>623621123</div>
+                                        <p>Transaction ID</p>
+                                        <p>623621123</p>
                                     </div>
                                     <div nz-row nzJustify="space-between">
-                                        <div nz-col>Status</div>
-                                        <div nz-col>
-                                            <nz-tag nzColor="success" (click)="openPaymentStatus()">Paid</nz-tag>
-                                        </div>
+                                        <p>Status</p>
+                                        <nz-tag nzColor="success" (click)="openPaymentStatus()">Paid</nz-tag>
                                     </div>
                                 </div>
                             </div>
