@@ -529,3 +529,16 @@ nz-space {
       display: flex  !important;
     }
 }
+
+//hide header and side menu on mobile
+nz-header , nz-sider{
+    @media screen and (max-width: 768px) {
+        display: none  !important;
+      } 
+}
+
+nz-content{
+    @media screen and (max-width: 768px) {
+        margin: 0px  !important;
+    } 
+}
