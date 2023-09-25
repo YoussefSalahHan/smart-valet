@@ -60,10 +60,25 @@
         border-top-right-radius: 0px !important;
         border-top-left-radius: 0px !important;
     }
+    .ant-table-pagination-right{
+        justify-content: center;
+    }
+    .ant-table-container{
+        @media (max-width: 767px) {
+            width: 94%;
+            overflow: hidden;
+            margin: 15px auto;
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
+    }
 
     .filters {
         display: flex;
         align-items: center;
+        @media (max-width: 767px) {
+            display: none;
+        }
 
         .ant-dropdown-link {
             color: #fff;
@@ -81,6 +96,25 @@
 
     .ant-table-content {
         padding: 0px 30px;
+        @media (max-width: 767px) {
+            padding: 0px;
+            overflow-x: scroll;
+        }
+        &:-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .ant-table-content::-webkit-scrollbar {
+        display: none;
+    }
+    th , td{
+        @media (max-width: 767px) {
+            font-size: 13px !important;
+            padding: 10px !important;
+            white-space: nowrap;
+            text-align: center !important;
+            height: 45px !important;
+        }
     }
 
     .table-header {
@@ -116,19 +150,41 @@
             padding-top: 8px;
         }
     }
-
+    .ant-tag{
+        width: fit-content !important;
+        height: fit-content !important;
+        padding: 1px 10px;
+        padding-top: 3px;
+        margin: 0px;
+    }
     .ant-table {
         overflow: hidden;
         padding-bottom: 10px;
+        @media (max-width: 767px) {
+            padding-bottom: 0px;
+        }
 
         .ant-table-row {
             padding: 40px 0px;
+            @media (max-width: 767px) {
+                padding: 0px;
+            }
 
             .ant-table-cell {
                 font-weight: 400;
                 font-size: 14px;
                 border-bottom-color: #bfcae4;
             }
+        }
+        .ant-table-tbody{
+            .ant-table-row {    
+                &:last-child{
+                    .ant-table-cell {
+                        border:0px !important;
+                    }
+                }
+            }
+
         }
 
         .ant-table-thead {
@@ -224,36 +280,36 @@
 
 
 
-@media (max-width:767px) {
+// @media (max-width:767px) {
 
-    .ant-table-thead>tr>th,
-    .ant-table-tbody>tr>td,
-    .ant-table tfoot>tr>th,
-    .ant-table tfoot>tr>td {
-        padding: 8px 0px 0px 0px !important;
-    }
+//     .ant-table-thead>tr>th,
+//     .ant-table-tbody>tr>td,
+//     .ant-table tfoot>tr>th,
+//     .ant-table tfoot>tr>td {
+//         padding: 8px 0px 0px 0px !important;
+//     }
 
-    .custom-table .ant-table-content {
-        padding: 0px;
-    }
+//     .custom-table .ant-table-content {
+//         padding: 0px;
+//     }
 
-    .custom-table .ant-table .ant-table-thead .ant-table-cell {
-        font-size: 9pt !important;
-        white-space: nowrap !important;
-        padding: 1px !important;
-    }
+//     .custom-table .ant-table .ant-table-thead .ant-table-cell {
+//         font-size: 9pt !important;
+//         white-space: nowrap !important;
+//         padding: 1px !important;
+//     }
 
-    .custom-table .ant-table-pagination.ant-pagination {
-        display: flex !important;
-        flex-direction: column !important;
-    }
+//     .custom-table .ant-table-pagination.ant-pagination {
+//         display: flex !important;
+//         flex-direction: column !important;
+//     }
 
-    .custom-table .ant-table .ant-table-row .ant-table-cell {
-        font-size: 13pt;
-        padding-right: 4px !important;
-        padding-left: 4px !important;
-    }
-}
+//     .custom-table .ant-table .ant-table-row .ant-table-cell {
+//         font-size: 13pt;
+//         padding-right: 4px !important;
+//         padding-left: 4px !important;
+//     }
+// }
 
 
 
@@ -540,5 +596,6 @@ nz-header , nz-sider{
 nz-content{
     @media screen and (max-width: 768px) {
         margin: 0px  !important;
+        background: #fff !important;
     } 
 }
