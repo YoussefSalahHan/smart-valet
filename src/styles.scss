@@ -57,6 +57,7 @@
     overflow: hidden;
     margin-bottom: 30px;
     @media (max-width: 767px) {
+        border-radius:0px !important;
         border-top-right-radius: 0px !important;
         border-top-left-radius: 0px !important;
     }
