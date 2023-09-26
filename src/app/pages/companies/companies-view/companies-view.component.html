@@ -5,7 +5,7 @@
                 <ul>
                     <li style="width: 22%;" class="row">
                         <img src="https://placehold.co/600x400" alt="">
-                        <div>
+                        <div class="name">
                             <p>Ahmed 1</p>
                             <span>#1000</span>
                         </div>
@@ -14,11 +14,11 @@
                         <p>Orders</p>
                         <span>100</span> 
                     </li>
-                    <li style="width: 23%;">
+                    <li style="width: 23%;" class="times">
                         <p>Times Of Work</p>
                         <span>From 8 Am To 12 Pm<span nz-icon nzType="eye" nzTheme="outline"></span></span> 
                     </li>
-                    <li style="width: 13%;">
+                    <li style="width: 13%;" class="remove-border">
                         <p>Status</p>
                         <span class="active" (click)="changeStatus()">Active <span nz-icon nzType="down" nzTheme="outline"></span></span> 
                     </li>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div nz-row [nzGutter]="40">
-        <div nz-col [nzSpan]="12">
+        <div nz-col nzXs="24" nzSm="24" nzMd="12">
             <div class="branch-details">
                 <nz-collapse nzExpandIconPosition="right">
                     <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active">
@@ -91,7 +91,7 @@
                 </button>
             </div>
         </div>
-        <div nz-col [nzSpan]="12">
+        <div nz-col nzXs="24" nzSm="24" nzMd="12">
             <div class="earning-branch-widget">
                 <div class="earning-header">
                     <h3 class="title">Earnings - 500 Order</h3>

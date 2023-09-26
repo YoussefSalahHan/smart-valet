@@ -8,9 +8,7 @@
     }
 }
 .custom-table .table-header{
-    @media (max-width:768px) {
-        flex-direction: column;
-    }
+    
 }
 .filters {
     ::ng-deep .ant-select-selector  {
@@ -145,6 +143,9 @@
         border-radius: 20px;
         padding: 24px;
         flex-direction: column;
+        @media (max-width:768px) {
+            background-color: #fff;
+        }
     }
 }
 .collapese{
@@ -176,10 +177,14 @@
     top: 3px;
     padding-inline-start: 9px;
 }
+::ng-deep .ant-card{
+    @media (max-width:768px) {
+        background: transparent !important;
+    }
+}
 
 ::ng-deep .ant-collapse{
     @media (max-width:768px) {
-        padding: 15px;
         margin-bottom: 20px;
         border-radius: 20px;
 
@@ -198,6 +203,9 @@
         border-bottom: 1px solid #d9d9d9 !important;
         @media (max-width:768px) {
             border:0px !important;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 20px !important;
         }
     }
     .ant-collapse-content-box{

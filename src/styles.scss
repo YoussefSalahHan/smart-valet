@@ -11,6 +11,7 @@
     height: 100%;
     @media (max-width:768px) {
         padding: 0px;
+        background: #F6F8FC;
     }
 }
 
@@ -163,6 +164,7 @@
         padding-bottom: 10px;
         @media (max-width: 767px) {
             padding-bottom: 0px;
+            background: transparent;
         }
 
         .ant-table-row {
@@ -194,6 +196,9 @@
                 background: #fff;
                 color: #2B50AA;
                 border-bottom-color: #96a7d4;
+                @media (max-width: 767px) {
+                    background: transparent;
+                }
 
                 &::before {
                     display: none;
@@ -211,6 +216,9 @@
         padding: 15px 0px;
         padding-bottom: 25px;
         background: #fff;
+        @media (max-width: 767px) {
+            background: transparent;
+        }
 
         .ant-pagination-item {
             a {
@@ -533,6 +541,7 @@ nz-space {
             padding-top: 25px;
             border-bottom-color: #c2cbe5;
             padding-bottom: 20px;
+            padding-inline-end: 0px !important;
 
             &:before {
                 content: "";
@@ -600,3 +609,4 @@ nz-content{
         background: #fff !important;
     } 
 }
+
