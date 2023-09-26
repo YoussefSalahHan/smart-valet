@@ -1,48 +1,95 @@
 p{
     margin: 0px;
 }
+.page-container{
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+}
 nz-card{
     border-radius: 20px;
     background: #FBFBFE;
     border:0px !important;
+    @media (max-width: 767px) {
+        background: #fff;
+        margin-bottom: 20px;
+    }
 }
 .cards{
     margin-bottom: 46px;
+    @media (max-width: 767px) {
+        margin-bottom: 0px;
+    }
+    ::ng-deep .ant-card-body{
+        @media (max-width: 767px) {
+            padding: 15px 5px;
+        }
+        
+    }
 }
 .status-card{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction:column ;
+    }
     .numbers{
         display: flex;
         align-items: center;
+        @media (max-width: 767px) {
+            flex-direction:column ;
+        }
         img{
             margin-inline-end: 15px;
+            @media (max-width: 767px) {
+                width: 40px;
+                height: 40px;
+                margin: 0px;
+                margin-bottom: 5px;
+            }
         }
         div{
             display: flex;
             flex-direction: column;
             align-items: start;
+            @media (max-width: 767px) {
+                align-items: center;
+            }
             span{
                 color: #2B50AA;
                 text-transform: capitalize;
                 font-size: 17px;
                 opacity: .8;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }    
             }
             label{
                 color: #2B50AA;
                 text-transform: capitalize;
                 font-size: 42px;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
             }
         }
     }
     .statics{
         img{
             margin-bottom: 10px;
+            @media (max-width: 767px) {
+                width: 20px;
+                height: 20px;
+            }
         }
         h5{
             letter-spacing: 0px;
             font-size: 14px;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                font-weight: 300;
+            }
         }
         &.success{
             h5{
@@ -60,13 +107,26 @@ nz-card{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-direction:column ;
+    }
     .titles{
+        @media (max-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
         h2{
             letter-spacing: 2.4px;
             color: #2B50AA;
             text-transform: uppercase;
             opacity: 1;
             font-size: 24px;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                margin-bottom: 0px;
+            }
         }
         p{
             letter-spacing: 0px;
@@ -75,6 +135,9 @@ nz-card{
             font-size: 34px;
             text-align: start;
             line-height: 20px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
 
         }
     }
@@ -83,6 +146,9 @@ nz-card{
         padding: 4px;
         border-radius: 20px;
         display: flex;
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
         button{
             border-radius: 20px;
             background: #2B50AA;
@@ -92,6 +158,11 @@ nz-card{
             display: flex;
             align-items: center;
             justify-content: center;
+            @media (max-width: 767px) {
+                width: fit-content;
+                padding: 0px 20px !important;
+                padding-top: 6px !important;
+            }
             &.active{
                 color: #2B50AA;
                 background:#fff ;
