@@ -33,6 +33,11 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+        margin: 0px auto;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 .times-of-work{
     a{
