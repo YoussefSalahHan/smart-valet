@@ -66,14 +66,14 @@ hr{
     width: 100%;
 }
 ::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector{
-    height: 67px;
+    height: 40px;
     border: 1px solid #E9E9F0;
     border-radius: 20px;
     font-size: 14px;
     margin-bottom: 24px;
 }
 ::ng-deep .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
-    height: 67px;
+    height: 40px;
 }
 ::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-placeholder,
 ::ng-deep .ant-select-single .ant-select-selector .ant-select-selection-item
@@ -89,13 +89,24 @@ hr{
     padding: 0 22px;
 }
 ::ng-deep .ant-modal{
-    width: 50vw !important;
     .ant-modal-body{
         padding: 0px;
     }
 }
+::ng-deep .ant-modal-wrap{
+    @media (max-width: 767px) {
+        display: inline-block;
+    }
+}
 
-.times-of-work-sheet{
+::ng-deep .times-of-work-sheet{
+    width: fit-content !important;
+    @media (max-width: 767px) {
+        width: 100% !important;
+    }
+}
+
+.times-of-work-sheet{ 
     ul{
         padding: 0px;
         margin: 0px;
@@ -105,12 +116,18 @@ hr{
             display: flex;
             align-items: center; 
             padding: 8px 0px;
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
             p{
                 width: 30vw;
                 font-size: 20px;
                 font-weight: 500;
                 position: relative;
                 padding-inline-end: 15px;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
                 &:after{
                     content: "";
                     position: absolute;
@@ -149,6 +166,11 @@ hr{
 
 ::ng-deep .select-company-modal{
     width: 70vw !important;
+    .ant-modal-body{
+        @media (max-width: 767px) {
+            padding: 0px !important;
+        }
+    }
     .input-widget{
         margin-top: 20px;
         position: relative;
@@ -190,8 +212,22 @@ hr{
         margin-bottom: 18px;
         align-items: center;
         background: #FBFBFE;
+        @media (max-width: 767px) {
+            width: calc((100% - 10px) / 2);
+            padding: 5px;
+            margin-inline-end: 10px;
+            margin-bottom: 8px;
+        }
         &:nth-child(3n+0){
             margin-inline-end: 0px;
+            @media (max-width: 767px) {
+                margin-inline-end: 10px;
+            }
+        }
+        &:nth-child(2n+0){
+            @media (max-width: 767px) {
+                margin-inline-end: 0px;
+            }
         }
             img{
                 width: 50px;
@@ -199,6 +235,9 @@ hr{
                 border-radius: 50%;
                 object-fit: cover;
                 margin: 0px 12px;
+                @media (max-width: 767px) {
+                    margin: 0px 5px;
+                }
             }
             .user-data{
                 display: flex;
