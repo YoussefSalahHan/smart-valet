@@ -8,11 +8,11 @@
             </p>
         </div>
         <div class="widget-body">
-            <div nz-row [nzGutter]="40" class="cards">
-                <div nz-col [nzSpan]="15">
+            <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 24 }" class="cards">
+                <div nz-col nzXs="24" nzSm="24" nzMd="15">
                   <nz-card class="gray">
                     <h3 class="custom-title">Branch User Info .</h3>
-                    <div nz-row [nzGutter]="40">
+                    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 24 }">
                         <div class="input-widget" nz-col [nzSpan]="24">
                             <label>User Name</label>
                             <input nz-input placeholder="Branch Name" />
@@ -34,10 +34,10 @@
                     </div>
                   </nz-card>
                 </div>
-                <div nz-col [nzSpan]="9">
+                <div nz-col nzXs="24" nzSm="24" nzMd="9">
                     <nz-card class="gray add-order-summary">
                         <h3 class="custom-title">Company / Branch Info .</h3>
-                        <div nz-row [nzGutter]="40">
+                        <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 24 }">
                             <div class="input-widget" nz-col [nzSpan]="24">
                                 <label (click)="selectBranch()">Branch Name</label>
                                 <nz-select ngModel="lucy" nzPlaceHolder="Branch">
