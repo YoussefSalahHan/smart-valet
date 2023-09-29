@@ -3,6 +3,11 @@
     @media (max-width: 767px) {
         margin-bottom: 10px;
     }
+    .ant-card{
+        @media (max-width: 767px) {
+            background: #fff !important;
+        } 
+    }
 }
 
 nz-card {

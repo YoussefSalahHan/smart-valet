@@ -8,6 +8,12 @@ nz-header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  @media screen and (max-width: 768px) {
+    height: 60px;
+    background: #2B50AA;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+  }
 }
 
 nz-sider {

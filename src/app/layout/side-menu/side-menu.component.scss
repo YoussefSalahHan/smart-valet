@@ -1,6 +1,14 @@
+:host{
+    @media screen and (max-width: 768px) {
+        width:100%;
+    }
+}
 .side-menu {
     padding-top: 40px;
     padding-left: 40px;
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+    } 
 
     a {
         text-decoration: none;
@@ -8,6 +16,9 @@
         display: block;
         color: #2B50AA;
         padding: 20px 0;
+        @media screen and (max-width: 768px) {
+            padding: 15px 0;
+        }
 
         img {
             display: block;
@@ -20,5 +31,25 @@
     .router-link-active {
         background-color: #F6F8FC;
         border-left: 2px solid #2B50AA;
+    }
+}
+.profile {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .profile {
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        img {
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+        span {
+            padding: 0 5px;
+            font-size: 15px
+        }
     }
 }

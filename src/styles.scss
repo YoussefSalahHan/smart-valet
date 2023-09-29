@@ -11,7 +11,8 @@
     height: 100%;
     @media (max-width:768px) {
         padding: 0px;
-        background: #F6F8FC;
+        background: #f6f8fc;
+        padding-top: 50px !important;
     }
 }
 
@@ -70,7 +71,7 @@
             width: 94%;
             overflow: hidden;
             margin: 15px auto;
-            margin-top: 25px;
+            margin-top: 0px !important;
             margin-bottom: 0px;
         }
     }
@@ -129,8 +130,10 @@
         @media (max-width: 767px) {
             padding: 10px 20px;
             height: fit-content;
+            background: transparent;
             border-bottom-right-radius: 20px !important;
             border-bottom-left-radius: 20px !important;
+            padding-top: 15px;
         }
 
 
@@ -139,7 +142,7 @@
             margin-bottom: 0px;
             padding-top: 4px;
             @media (max-width: 767px) {
-                opacity: .8;
+                color: #2B50AA;
                 text-transform: uppercase;
                 font-size: 18px !important;
 
@@ -624,16 +627,78 @@ nz-space {
     }
 }
 
-//hide header and side menu on mobile
-nz-header , nz-sider{
-    @media screen and (max-width: 768px) {
-        display: none  !important;
-      } 
-}
+// nz-header , nz-sider{
+//     @media screen and (max-width: 768px) {
+//         display: none  !important;
+//       } 
+// }
 
 nz-content{
     @media screen and (max-width: 768px) {
         margin: 0px  !important;
         background: #fff !important;
     } 
+}
+nz-sider{
+    @media screen and (max-width: 768px) {
+        overflow: inherit !important;
+        z-index: 123;
+        position: fixed !important;
+        top: 0px !important;
+        height: 100%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0px !important;
+    } 
+    .ant-layout-sider-zero-width-trigger{
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 142px;
+        }
+    }
+    .anticon.anticon-bars{
+        @media screen and (max-width: 768px) {
+            background: url("./assets/svg/vuesax-linear-arrow-circle-right.svg");
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        svg{
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+    .ant-layout-sider-children{
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &.ant-layout-sider-collapsed{
+        .anticon.anticon-bars{
+            @media screen and (max-width: 768px) {
+                background: url("./assets/svg/vuesax-linear-arrow-circle-left.svg");
+            }
+        }
+    }
+}
+.ant-layout-sider-zero-width-trigger{
+    @media screen and (max-width: 768px) {
+        background: #fff;
+        color: #2b51aa;
+    }
+}
+.ant-layout-header{
+    @media screen and (max-width: 768px) {
+        padding: 0px 10px !important;
+    }
 }

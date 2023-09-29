@@ -28,6 +28,9 @@ h2 {
     font-size: 23px;
     font-weight: bold;
     padding-left: 10px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .search {
@@ -59,9 +62,15 @@ h2 {
     .notification{
         padding-right: 30px;
         cursor: pointer;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
     .profile {
         cursor: pointer;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         img {
             border-radius: 50%;
         }
